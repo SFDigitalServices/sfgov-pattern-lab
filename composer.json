@@ -1,0 +1,7 @@
+{
+    "name": "sf-digital-services/sfgov-pattern-lab",
+    "description": "Pattern Lab library for SF Digital Services",
+    "type": "drupal-library",
+    "minimum-stability": "dev",
+    "require": {}
+}
