@@ -12,7 +12,7 @@
   h3:first-of-type {
     margin-top: 0;
     @include media($narrow-screen) {
-      margin-top: 31px;
+      margin-top: 50px;
     }
   }
   h3 {

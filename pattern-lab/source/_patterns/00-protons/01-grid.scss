@@ -1,6 +1,7 @@
 @import "../../../../node_modules/susy/sass/susy-prefix";
 @import "../../../../node_modules/susy/sass/plugins/svg-grid";
 @import "02-mixins";
+@import "00-breakpoints";
 
 @mixin media($bp) {
   @media screen and (min-width: #{$bp}) {
@@ -13,11 +14,6 @@
     @content;
   }
 }
-
-$mobile-screen: 480px;
-$medium-screen: 769px;
-$narrow-screen: 950px;
-$wide-screen: 1220px;
 
 // Basic grid settings.
 $susy: (
@@ -168,13 +164,17 @@ $susy: (
     padding: 45px 0;
   }
   .sfgov-container--content-left {
+    padding: 39px 25px 70px 25px;
     @include media-max($medium-screen) {
       order: 2;
     }
     @include media($medium-screen + 1) {
+      @include clearfix;
       width: susy-span(7.8 narrow of 12 narrow);
       float: left;
-      @include clearfix;
+    }
+    @include media($narrow-screen) {
+      padding: 0;
     }
   }
   .sfgov-container--content-right {

@@ -1,0 +1,25 @@
+@import '../../01-atoms/01-colors/01-colors';
+
+details {
+  margin: 40px 0;
+}
+summary {
+  background: $color-gray-lightest;
+  font-weight: 600;
+  padding: 20px;
+  position: relative;
+
+  &::-webkit-details-marker {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    content: "+";
+
+    details[open] & {
+      content: "-";
+    }
+  }
+}
+.details__content {
+  padding: 20px;
+}

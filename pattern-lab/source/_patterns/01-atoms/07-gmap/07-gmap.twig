@@ -1,0 +1,14 @@
+{% if include_map %}
+    <iframe width="{{ width }}" height="{{ height }}" frameborder="0" style="border:1px solid #D5D5D5;" src="https://maps.google.com/maps?hl={{ langcode }}&amp;q={{ url_suffix }}&amp;t={{ map_type }}&amp;z={{ zoom }}&amp;output=embed"></iframe>
+{% endif %}
+{% if include_static_map %}
+    <div class="simple-gmap-static-map">
+        <a href="https://maps.google.com/maps?q={{ url_suffix }}&amp;hl={{ langcode }}&amp;t={{ map_type }}&amp;z={{ zoom }}" target="_blank"><img src="https://maps.googleapis.com/maps/api/staticmap?size={{ width }}x{{ height }}&amp;scale={{ static_scale }}&amp;zoom={{ zoom }}&amp;language={{ langcode }}&amp;maptype={{ static_map_type }}&amp;markers=color:red|{{ url_suffix }}&amp;sensor=false&amp;key={{ apikey }} " style="border:1px solid #D5D5D5;" /> </a>
+    </div>
+{% endif %}
+{% if include_link %}
+    <p class="simple-gmap-link"><a href="https://maps.google.com/maps?q={{ url_suffix }}&amp;hl={{ langcode }}&amp;t={{ map_type }}&amp;z={{ zoom }}" target="_blank">{{ link_text }}</a></p>
+{% endif %}
+{% if address_text is not empty %}
+    <p class="simple-gmap-address">{{ address_text }}</p>
+{% endif %}

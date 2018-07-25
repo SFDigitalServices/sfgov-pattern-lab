@@ -1,0 +1,11 @@
+{% set heading_level = level ? level : 2 %}
+<div class="sfgov-section{{ styleModifier ? ' sfgov-section--' ~ styleModifier }}">
+  {% if title %}
+    <h{{- heading_level }} class="sfgov-section__title">{{ title }}</h{{- heading_level -}}>
+  {% endif %}
+  {% if content %}
+    <div class="sfgov-section__content">
+      {{ content }}
+    </div>
+  {% endif %}
+</div>

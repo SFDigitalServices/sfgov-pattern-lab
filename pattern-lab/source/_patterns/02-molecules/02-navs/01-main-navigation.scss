@@ -29,7 +29,7 @@ $hit-area: 4.4rem;
         line-height: 19px;
         font-weight: bold;
         text-decoration: none;
-        &:hover {
+        &:hover, &.is-active {
           @include media($medium-screen + 1) {
             border-bottom: 5px solid $color-blue-darker;
             padding-bottom: 8px;

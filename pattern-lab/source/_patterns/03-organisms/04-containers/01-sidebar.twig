@@ -1,8 +1,14 @@
+
 {% if content %}
   <div class="sfgov-container--content-{{- side -}}">
-    <h2 class="sfgov-header-section no-margin big-padding">{{ title }}</h2>
-    <div class="sfgov-sidebar-container">
-      {{ content }}
+    {% if title %}
+      <h2 class="sfgov-header-section no-margin big-padding">{{ title }}</h2>
+    {% endif %}
+    <div class="sidebar--{{ side }} sfgov-sidebar-container">
+      {% if subtitle %}
+        <h3>{{ subtitle }}</h3>
+      {% endif %}
+        {{ content }}
     </div>
   </div>
 {% endif %}

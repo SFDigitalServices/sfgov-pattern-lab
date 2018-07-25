@@ -1,0 +1,21 @@
+
+<p class="address" translate="no"> </p>
+    {% if given_name or family_name %}
+    <p>{{ given_name }} {{ family_name }} </p>
+{% endif %}
+  {% if organization %}
+      <h4>{{ organization }} </h4>
+  {% endif %}
+{% if address_line1 %}
+      <p>{{ address_line1 }}</p>
+  {% endif %}
+{% if address_line2 %}
+    <p>{{ address_line2 }}</p>
+{% endif %}
+
+  {% if dependent_locality.code %}
+      <p>{{ dependent_locality.code }}</p>
+  {% endif %}
+  {% if locality or postal_code or administrative_area.code %}
+      <p>{{ locality }}, {{ administrative_area.code }} {{ postal_code }}</p>
+  {% endif %}

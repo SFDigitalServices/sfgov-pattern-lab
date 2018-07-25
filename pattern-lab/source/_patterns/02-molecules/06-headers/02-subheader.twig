@@ -1,0 +1,12 @@
+{% if content %}
+  <section class="sfgov-subheader{{ styleModifier ? ' sfgov-subheader--' ~ styleModifier }}">
+    <div class="sfgov-container">
+      {% if title %}
+        <h2 class="sfgov-subheader__title">{{ title }}</h2>
+      {% endif %}
+      <div class="sfgov-subheader__content">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+{% endif %}

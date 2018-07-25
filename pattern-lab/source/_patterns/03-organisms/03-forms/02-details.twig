@@ -1,0 +1,8 @@
+{% if content and summary %}
+  <details{{ open ? ' open' : '' }}>
+    <summary class="details__summary">{{ summary }}</summary>
+    <div class="details__content">
+      {{ content }}
+    </div>
+  </details>
+{% endif %}

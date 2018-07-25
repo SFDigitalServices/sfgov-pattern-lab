@@ -12,12 +12,26 @@
       }
     }
   }
+  .sidebar--right {
+    .phone--container {
+      .sfgov-icon-phone {
+        display: none;
+      }
+      .phone{
+        margin-left: 0;
+      }
+    }
+  }
   p {
     margin: 0;
     padding: 0;
     color: $color-gray;
     font-size: 17px;
     line-height: 26px;
+  }
+  h3 {
+    margin-top: 0;
+    color: $color-blue-darker;
   }
   h4.field__label {
     @include source-sans-pro;
