@@ -15,6 +15,7 @@ import sourcemaps from 'gulp-sourcemaps';
 import shell from 'gulp-shell';
 import concat from 'gulp-concat';
 import babel from 'gulp-babel';
+import imagemin from 'gulp-imagemin';
 
 // Require a copy of the JS compiler for uswds.
 // the gulptask is called "javascript"
@@ -77,6 +78,12 @@ gulp.task('pl:css', () => {
         .pipe(browserSync.reload({stream: true, match: '**/*.css'}));
 });
 
+gulp.task('pl:imagemin', () => {
+    return gulp.src(config.images.src)
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/images'))
+});
+
 // Watch task.
 // ------------------------------------------------------------------- //
 
@@ -86,6 +93,7 @@ gulp.task('watch', function () {
     gulp.watch(config.css.src, ['pl:js']);
     gulp.watch(config.pattern_lab.src, ['generate:pl']);
     gulp.watch(config.pattern_lab.javascript.src, ['generate:pl']);
+    gulp.watch(config.images.src, ['pl:imagemin']);
 });
 
 // Static Server + Watch.
@@ -98,7 +106,7 @@ gulp.task('serve', ['watch', 'generate:pl'], () => {
 });
 
 // generate Pattern library.
-gulp.task('generate:pl', ['pl:php', 'legacy:js', 'pl:css', 'pl:js' ]);
+gulp.task('generate:pl', ['pl:php', 'legacy:js', 'pl:css', 'pl:js', 'pl:imagemin']);
 
 // Generate pl with PHP.
 // -------------------------------------------------------------------- //

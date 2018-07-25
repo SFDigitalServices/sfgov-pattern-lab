@@ -37,6 +37,11 @@
       ]
     }
   },
+  "images": {
+    "src": [
+      "pattern-lab/source/images/**/*"
+    ]
+  },
   "autoprefixer": [
     "last 2 versions",
     "> 1%",
