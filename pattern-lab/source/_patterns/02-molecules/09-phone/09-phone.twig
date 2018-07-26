@@ -1,5 +1,5 @@
 
-{% if  field_owner  %}
+{% if not field_owner.isEmpty  %}
         <h4 class="field__label">{{ field_owner.value }}</h4>
     {% endif %}
     {% if not field_tel.isEmpty %}
