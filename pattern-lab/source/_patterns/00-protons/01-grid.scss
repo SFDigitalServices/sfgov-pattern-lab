@@ -44,7 +44,8 @@ $susy: (
   @include clearfix;
   @include media($narrow-screen) {
     width: 949px;
-    margin: 40px auto 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -145,12 +146,11 @@ $susy: (
 
 .sfgov-grid-two-columns {
   @include sfgov-grid-two-columns--padding;
-  padding: 20px 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   @include media($narrow-screen) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 30px 10px;
+    // padding: 30px 10px;
   }
   grid-template-rows: auto;
   grid-gap: 20px 20px;

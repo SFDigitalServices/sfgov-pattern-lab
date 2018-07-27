@@ -7,6 +7,12 @@
   @include media($narrow-screen) {
     padding: 42px 0 35px 0;
   }
+  @include media-max($narrow-screen) {
+    padding: 25px 25px 30px 25px;
+    h1 {
+      font-size: 3rem;
+    }
+  }
   h1 {
     color: #205493;
   }
