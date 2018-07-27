@@ -5,7 +5,7 @@
       <h3 class="lead-paragraph">{{ banner.text }}</h3>
     {% endif %}
     {% if banner.date %}
-      <time class="date">{{ banner.date|date('l, F d') }}</time>
+      <time class="date">{{ banner.date|date('F j, Y') }}</time>
     {% endif %}
   </div>
 </header>
