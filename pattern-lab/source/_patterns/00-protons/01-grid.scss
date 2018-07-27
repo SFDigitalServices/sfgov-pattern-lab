@@ -40,6 +40,14 @@ $susy: (
   }
 }
 
+@mixin sfgov-grid-two-columns--padding() {
+  @include clearfix;
+  @include media($narrow-screen) {
+    width: 949px;
+    margin: 40px auto 0 auto;
+  }
+}
+
 .sfgov-container--full {
   @include clearfix;
   @include media($narrow-screen) {
@@ -136,7 +144,7 @@ $susy: (
 // Grid Two Columns.
 
 .sfgov-grid-two-columns {
-  @include sfgov-container-full--no-padding;
+  @include sfgov-grid-two-columns--padding;
   padding: 20px 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
