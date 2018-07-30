@@ -1,0 +1,22 @@
+@import "../../00-protons/01-grid";
+@import "../../00-protons/04-icons";
+@import "../../01-atoms/01-colors/01-colors";
+
+  .document-file--container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    @include media($medium-screen) {
+      min-width: 183px;
+      margin-bottom: 0;
+    };
+    .document{
+      line-height: 30px;
+      margin-left: 10px;
+      color: $color-gray;
+    };
+  }
+
+
+
+

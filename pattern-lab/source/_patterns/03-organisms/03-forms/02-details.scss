@@ -8,12 +8,16 @@ summary {
   font-weight: 600;
   padding: 20px;
   position: relative;
+  ::-webkit-details-marker{
+    display: none;
+  }
 
-  &::-webkit-details-marker {
+  &:after{
     position: absolute;
-    top: 25px;
-    right: 20px;
+    top: 11px;
+    right: 27px;
     content: "+";
+    font-size: 2em;
 
     details[open] & {
       content: "-";

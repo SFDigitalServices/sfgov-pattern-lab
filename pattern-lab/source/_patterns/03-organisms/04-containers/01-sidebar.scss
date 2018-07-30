@@ -6,6 +6,7 @@
   position: relative;
   .sfgov-sidebar-container {
     padding: 25px;
+    padding-top: 5px;
     .field {
       &:last-child {
         margin-bottom: 10px;
@@ -41,4 +42,9 @@
     line-height: 26px;
     margin-top: 0;
   }
+}
+
+.sfgov-container--sidebar-divider{
+  min-height: 25px;
+  background-color: white;
 }
