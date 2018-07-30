@@ -184,6 +184,9 @@ $susy: (
     @include media($narrow-screen) {
       padding: 0;
     }
+    @include media-max($medium-screen) {
+      padding: 0;
+    }
   }
   .sfgov-container--content-right {
     @include media-max($medium-screen) {
