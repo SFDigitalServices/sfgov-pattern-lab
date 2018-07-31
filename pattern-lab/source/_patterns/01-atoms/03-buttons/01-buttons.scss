@@ -58,7 +58,7 @@ $font-normal: 400 !default;
 @mixin sfgov-button() {
   @include font-smoothing;
   @include source-sans-pro;
-  margin: 0.5em 0.5em 0.5em 0;
+  margin: 15px 0;
   background-color: $color-primary;
   border: 0;
   border-radius: $button-border-radius;

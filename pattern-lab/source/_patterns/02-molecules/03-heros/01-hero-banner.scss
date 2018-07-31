@@ -17,7 +17,11 @@
     // todo: add this color to the styleguide.
     color: $color-blue-darker;
     @include merriweather;
-
+  }
+  &.no-banner-text {
+    h1 {
+      margin-bottom: 20px;
+    }
   }
   .lead-paragraph {
     margin-bottom: 25px;
@@ -27,5 +31,6 @@
     font-size: 15px;
     color: $color-gray;
     line-height: 19px;
+    margin-top: 20px;
   }
 }
