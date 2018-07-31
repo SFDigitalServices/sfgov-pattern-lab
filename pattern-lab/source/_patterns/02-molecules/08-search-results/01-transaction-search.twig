@@ -1,9 +1,10 @@
 <div class="sfgov-transaction-search--container">
   <a class="title-url" href="{{ url }}"><h4>{{ title }}</h4></a>
   <div class="body-container">
-    <div class="related-dept">{{ relatedDept }}</div>
     <p class="body">{{ body|striptags('<a>')|raw }}</p>
-    <div class="clearfix"></div>
+    {% if relatedDept|length > 0 %}
+      <div class="related-dept">{{ relatedDept }}</div>
+    {% endif %}
   </div>
 </div>
 {# {{ dump() }} #}
