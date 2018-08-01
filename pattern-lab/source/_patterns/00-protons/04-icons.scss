@@ -18,6 +18,16 @@
     background: url("../images/icons/phone.svg") no-repeat;
   }
 }
+.sfgov-icon-mail {
+  &::before {
+    content: '';
+    display: block;
+    width: 29px;
+    height: 29px;
+    background: url("../images/icons/mail.png");
+    background: url("../images/icons/mail.svg") no-repeat;
+  }
+}
 
 .sfgov-icon-department {
   &::before {

@@ -1,0 +1,18 @@
+<div class="address_card">
+    <div class="address_card-container">
+        {% if address_card.icon %}
+            <i class="sfgov-icon-{{ address_card.icon }}"></i>
+        {% endif %}
+        {% if address_card.organization %}
+            <h4 class="address_card__line1">{{ address_card.organization }}</h4>
+        {% endif %}
+        {% if address_card.line1 %}
+            <div class="address_card__line1">{{ address_card.line1 }}</div>
+        {% endif %}
+        {% if address_card.line2 %}
+            <div class="address_card__line2">{{ address_card.line2 }}</div>
+        {% endif %}
+    </div>
+</div>
+{{ card }}
+
