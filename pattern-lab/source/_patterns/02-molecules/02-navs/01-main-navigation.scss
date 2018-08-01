@@ -180,7 +180,7 @@ $hit-area: 4.4rem;
   }
 
   nav {
-    margin-top: 6rem;
+    margin-top: 5rem;
     min-height: 100%;
 
     @include media($narrow-screen + 1) {
@@ -250,10 +250,8 @@ $hit-area: 4.4rem;
         li {
           display: block;
           border-bottom: 1px solid $color-gray-dark;
-          margin-right: 0;
+          margin: 0 40px 0 0;
           min-width: 231px;
-          padding-left: 20px;
-          padding-bottom: 8px;
           &:last-child {
             border-bottom: 0;
           }
@@ -262,6 +260,16 @@ $hit-area: 4.4rem;
             font-size: 17px;
             font-weight: 400;
             line-height: 22px;
+            padding: 8px 0 8px 15px;
+            display: block;
+            &.is-active {
+              font-weight: bold;
+              border-bottom: 0;
+              border-left: 5px solid $color-blue-darker;
+            }
+            &:hover {
+              border-bottom: 0;
+            }
           }
         }
       }
