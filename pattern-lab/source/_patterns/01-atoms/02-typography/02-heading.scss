@@ -8,6 +8,12 @@
   margin: 0;
 }
 
+h1,h2,h3,h4,h5,h6,summary {
+  color: $color-gray-dark;
+  @include source-sans-pro;
+}
+
+
 h1 {
   font-size: 3rem;
   line-height: 3.9rem;
@@ -16,6 +22,17 @@ h1 {
     font-size: 4rem;
     line-height: 5.2rem;
   }
+}
+
+h2 {
+  @include merriweather;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .sfgov-header-section {
