@@ -1,4 +1,6 @@
-@import "../../01-atoms/01-colors/01-colors.scss";
+@import "../../00-protons/00-breakpoints";
+@import "../../00-protons/01-grid";
+@import "../../01-atoms/01-colors/01-colors";
 
 .sfgov-tabbed-navigation {
   ul {
@@ -15,6 +17,10 @@
           background: $color-aqua-lightest;
         }
       }
+    }
+    @include media-max($mobile-screen) {
+      font-size: 1.4rem;
+      padding-left: 0;
     }
   }
 }
