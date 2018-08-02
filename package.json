@@ -4,7 +4,7 @@
   "description": "SFGOV Pattern Lab library",
   "main": "index.js",
   "scripts": {
-    "install": "php pattern-lab/core/console --generate"
+    "prepublish": "php pattern-lab/core/console --generate"
   },
   "repository": {
     "type": "git",
