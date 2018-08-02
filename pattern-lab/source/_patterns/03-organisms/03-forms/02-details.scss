@@ -2,28 +2,29 @@
 
 details {
   margin: 15px 0;
-}
-summary {
-  background: $color-gray-lightest;
-  font-weight: 600;
-  padding: 20px;
-  position: relative;
-  ::-webkit-details-marker{
-    display: none;
-  }
-
-  &:after{
-    position: absolute;
-    top: 11px;
-    right: 27px;
-    content: "+";
-    font-size: 2em;
-
-    details[open] & {
-      content: "-";
+  summary {
+    background: $color-gray-lightest;
+    font-weight: 600;
+    padding: 20px;
+    position: relative;
+    &::-webkit-details-marker{
+      display: none;
+    }
+  
+    &:after{
+      position: absolute;
+      top: 11px;
+      right: 27px;
+      content: "+";
+      font-size: 2em;
+  
+      details[open] & {
+        content: "-";
+      }
     }
   }
 }
+
 .details__content {
   padding: 20px;
 }
