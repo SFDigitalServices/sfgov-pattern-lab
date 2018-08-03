@@ -1,6 +1,7 @@
- {% if not field_file.isEmpty %}
+
+{% if not field_file.isEmpty %}
         <div class="document-file--container">
             <i class="sfgov-icon-filefilled"></i>
-            <span class="document"><a href="{{ file_url(field_file.entity.field_media_file.entity.uri.value) }}"> {{ field_file.entity.label }} </a></span>
+            <span class="document"><a href="{{ fileurl }}"> {{ field_file.entity.label }} </a></span>
         </div>
     {%  endif %}
