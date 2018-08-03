@@ -8,7 +8,7 @@
   margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6,summary {
+h1,h2,h3,summary {
   color: $color-gray-dark;
   @include source-sans-pro;
 }
