@@ -42,7 +42,11 @@
     margin-top: 0;
   }
 }
-
+.address-in-paragraph {
+  .eck-entity-address-field {
+    display: none;
+  }
+}
 .sfgov-container--sidebar-divider{
   min-height: 25px;
   background-color: white;
