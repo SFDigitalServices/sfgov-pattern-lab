@@ -359,7 +359,7 @@ button,
     text-decoration: none;
     width: auto;
 
-    &:visited {
+    &:visited, &:hover {
       color: $color-white;
     }
   }
