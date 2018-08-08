@@ -71,6 +71,11 @@ $hit-area: 4.4rem;
     margin-right: 10px;
   }
 
+  @include media-max($tiny-screen) {
+    margin-right: 8px;
+    width: 5rem;
+  }
+
   &:hover {
     color: $color-white;
     background-color: $color-primary-darker;

@@ -27,10 +27,10 @@
       img {
         max-width: 45px;
       }
-      @include media($narrow-screen) {
-        min-width: 45px;
+      @include media-max($narrow-screen) {
+        min-width: 40px;
         img {
-          max-width: 45px;
+          max-width: 40px;
         }
       }
     }
@@ -38,8 +38,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-left: 14px;
-      min-width: 95px;
+      margin-left: 8px;
+      min-width: 120px;
       @include media($narrow-screen) {
         position: relative;
       }
