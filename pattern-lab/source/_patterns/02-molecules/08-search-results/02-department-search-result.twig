@@ -2,11 +2,11 @@
   <div class="department-search-result--container">
     <div class="content-type"><i class="sfgov-icon-department"></i><span>{{ content_type }}</span></div>
     {% if url %}
-      <a href="{{ url }}">
+      <a class="title-url" href="{{ url }}">
     {% endif %}
-        <h3 class="title">
+        <h4>
           {{ title }}
-        </h3>
+        </h4>
     {% if url %}
       </a>
     {% endif %}
