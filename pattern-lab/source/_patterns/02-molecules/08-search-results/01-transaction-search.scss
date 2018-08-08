@@ -38,6 +38,16 @@
         font-size: 1.7rem;
       }
     }
+    .body-container {
+      display: block;
+      flex: none;
+      .body, .related-dept {
+        display: block;
+        width: 100%;
+        flex: none;
+        text-align: left;
+      }
+    }
     // .body-container {
     //   .body, .related-dept {
     //     float: none;
