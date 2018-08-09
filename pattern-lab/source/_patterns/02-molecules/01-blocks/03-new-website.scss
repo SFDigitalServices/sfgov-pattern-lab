@@ -5,15 +5,15 @@
   background-color: $color-gray-lightest;
   padding: 30px 20px;
   @include media($medium-screen){
-    padding: 12px susy-span(1 wide of 12 wide) 70px;
+    padding: 40px susy-span(1 wide of 12 wide) 40px;
   }
   h2 {
     color: $color-blue-darkest;
-    padding: 1.5rem 0;
+    padding: 0;
     margin: 0;
   }
   p:last-child {
-    margin-bottom: 0;
+    margin: 15px 0px 0px;
     color: $color-gray;
   }
 }
