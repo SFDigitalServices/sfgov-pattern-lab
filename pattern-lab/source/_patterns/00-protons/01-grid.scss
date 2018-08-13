@@ -163,7 +163,7 @@ $susy: (
 // Right sidebar.
 
 .sfgov-container--right-sidebar {
-  padding: 0;
+  padding: 50px 0;
   @include media-max($medium-screen) {
     display: flex;
     flex-direction: column;
@@ -179,13 +179,14 @@ $susy: (
       float: left;
     }
     @include media($narrow-screen) {
-      padding: 25px;
+      padding: 0 25px;
     }
     @include media-max($medium-screen) {
-      padding: 25px;
+      padding: 0 25px;
     }
   }
   .sfgov-container--content-right {
+    margin-bottom: 25px;
     @include media-max($medium-screen) {
       order: 1;
     }
