@@ -51,10 +51,10 @@ $susy: (
 
 .sfgov-container--full {
   @include clearfix;
+  padding: 50px 0;
   @include media($narrow-screen) {
     width: 949px;
     margin: 0 auto;
-    padding: 0;
   }
 }
 
@@ -167,9 +167,6 @@ $susy: (
   @include media-max($medium-screen) {
     display: flex;
     flex-direction: column;
-  }
-  @include media($medium-screen + 1) {
-    padding: 50px 0;
   }
   .sfgov-container--content-left {
     padding: 39px 25px 70px 25px;
