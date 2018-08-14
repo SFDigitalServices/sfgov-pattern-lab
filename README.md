@@ -4,7 +4,7 @@ This project is based off the [PHP Twig version of Pattern Lab.](http://github.c
 
 ## Dependencies
 
-- php-cli (Use `php --version` to check that this is already installed)
+- php-cli (If `php --version` returns version info, then this is already installed)
 - [NodeJS](https://nodejs.org/)
 - [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx/)
 
