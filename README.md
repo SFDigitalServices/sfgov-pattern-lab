@@ -14,10 +14,10 @@ This project is based off the [PHP Twig version of Pattern Lab.](http://github.c
 
 2. `composer install`
   
-  Answer the prompts as follows:
+    Answer the prompts as follows:
   
-  - The path ./public/ already exists. Merge or replace with the contents of pattern-lab/styleguidekit-assets-default package? `M`
-  - Update the config option styleguideKitPath? `n`
+    - The path ./public/ already exists. Merge or replace with the contents of pattern-lab/styleguidekit-assets-default package? `M`
+    - Update the config option styleguideKitPath? `n`
 
 3. `cd ../`
 
