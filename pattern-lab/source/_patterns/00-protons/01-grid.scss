@@ -179,10 +179,10 @@ $susy: (
       float: left;
     }
     @include media($narrow-screen) {
-      padding: 0 25px;
+      padding: 0;
     }
     @include media-max($medium-screen) {
-      padding: 0 25px;
+      padding: 0;
     }
   }
   .sfgov-container--content-right {
