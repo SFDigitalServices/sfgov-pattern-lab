@@ -1,68 +1,47 @@
 # SFGOV Pattern Library.
 
-## this project uses:
+This project is based off the [PHP Twig version of Pattern Lab.](http://github.com/pattern-lab/edition-php-twig-standard)
 
-- pattern-lab/edition-twig-standard
+## Dependencies
 
-## Requirements:
+- php-cli (Use `php --version` to check that this is already installed)
+- [NodeJS](https://nodejs.org/)
+- [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx/)
 
-- php-cli
-- nodejs
-- composer
+## Installation
 
-## TODO:
+1. `cd pattern-lab`
 
-- check versions for php-cli
-- add gulp
-- migrate all scss from uswds to pattern lab using protons.
-- add gulp to watch SCSS and JS
-
-### Installation:
-
-`$ cd pattern-lab`
-
-`$ composer install`
-
-  answer the questions asked:
+2. `composer install`
   
-  - the path ./public/ already exists. merge or replace with the contents of pattern-lab/styleguidekit-assets-default package? `M`
-  - update the config option styleguideKitPath? `n`
+  Answer the prompts as follows:
+  
+  - The path ./public/ already exists. Merge or replace with the contents of pattern-lab/styleguidekit-assets-default package? `M`
+  - Update the config option styleguideKitPath? `n`
 
-`$ php pattern-lab/core/console --generate`
+3. `cd ../`
 
-`$ npm install`
+4. `php pattern-lab/core/console --generate`
 
-### Generate Pattern Lab public instance.
+5. `npm install`
 
-`$ php core/console --generate`
+## Getting Started
 
-#### Other commands:
+1. Run `gulp`. (You might need to re-install with `npm install gulp -g`)
 
-`$ php core/console --help`
+2. `php pattern-lab/core/console --server --watch`
 
-`$ php core/console --server`   
+## Other Commands
 
-Only watches the twig template changes:
+**Generating a public instance:** `$ php pattern-lab/core/console --generate`
 
-`$ php core/console --watch`
-
-### Using gulp.
-
-just run:
-
-`$ gulp`
+**Viewing a full list of commands:** `$ php pattern-lab/core/console --help`
 
 ### Documentation
 
-- browserSync script tag added to `pattern-lab/source/_meta/00-head.twig`
-- link stylesheet from google Fonts added to `pattern-lab/source/_meta/00-head.twig`
+- Edit the document `<head>` in `pattern-lab/source/_meta/00-head.twig`.
+- Edit pattern styles and markup in `pattern-lab/source/_patterns`.
+- Add or edit Markdown files to `pattern-lab/source/_patterns` to document the usage and context of each pattern.
+- Add any images to `pattern-lab/source/images`.
 
-## Images folder.
-
-- All content inside `source/images` get's copied by Pattern Lab into `public/images`, if you place images in this last location, they might get lost on the next Pattern Lab site generation.
-
-# TODO:
-
-- replace bourbon neat with something similar to css grid, like susy3.
-- implement JS atomic arrangement and compilation.
-
+All changes in `/source/` automatically compile to `/public`.
