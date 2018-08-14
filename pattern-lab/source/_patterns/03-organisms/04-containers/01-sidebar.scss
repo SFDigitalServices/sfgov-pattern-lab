@@ -8,8 +8,11 @@
     padding: 25px;
     .field {
       &:last-child {
-        margin-bottom: 10px;
+        margin-bottom: 25px;
       }
+    }
+    .paragraph {
+      margin-bottom: 25px;
     }
   }
   .sidebar--right {
