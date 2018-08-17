@@ -1,6 +1,12 @@
 @import "../../00-protons/01-grid";
 
 .sfgov-nav-container {
+  @include clearfix;
+  padding: 21px 0;
+  @include media($narrow-screen) {
+    width: 949px;
+    margin: 0 auto;
+  }
   .sfgov-nav-container__content {
     display: flex;
     @include media-max($narrow-screen) {
