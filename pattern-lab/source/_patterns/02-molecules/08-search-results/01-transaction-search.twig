@@ -1,5 +1,5 @@
 <div class="sfgov-transaction-search--container">
-  <a class="title-url" href="{{ url }}"><h4>{{ title }}</h4></a>
+  <a class="title-url" href="{{ url.url }}" {{ url.external ? "target='_blank'" : '' }}><h4>{{ title }}</h4></a>
   <div class="body-container">
     {% if relatedDept %}
       <div class="related-dept">{{ relatedDept }}</div>
@@ -7,4 +7,3 @@
     <p class="body">{{ body|striptags('<a>')|raw }}</p>
   </div>
 </div>
-{# {{ dump() }} #}
