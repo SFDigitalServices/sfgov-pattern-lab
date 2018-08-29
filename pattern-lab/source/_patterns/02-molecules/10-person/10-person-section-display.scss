@@ -1,5 +1,18 @@
 @import "../../01-atoms/01-colors/01-colors";
 
+.__person.field__items {
+  text-align: justify;
+  &:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+  }
+}
+.person-item {
+  display: inline-block;
+  width: 27%;
+  margin-bottom: 25px;
+}
 .person-container {
   .person-photo {
     background-size: cover;
@@ -9,6 +22,7 @@
     border-radius: 50%;
     display: inline-block;
     vertical-align: top;
+    margin-right: 15px;
     &.small {
       width: 76px;
       height: 76px;
