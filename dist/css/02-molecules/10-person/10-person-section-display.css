@@ -1,0 +1,3 @@
+.person-container .person-photo{background-size:cover;background-position:top center;width:150px;height:150px;border-radius:50%;display:inline-block;vertical-align:top}.person-container .person-photo.small{width:76px;height:76px}.person-container .person-bio{display:inline-block}.person-container .person-bio .person-name a{text-decoration:underline;color:#0071bc}.person-container .person-bio .person-name a>*{display:inline-block;text-decoration:underline}.person-container .person-bio .person-title{color:#5b616b;font-weight:600}.person-container .person-bio .person-subtitle{color:#5b616b;font-weight:normal}
+
+/*# sourceMappingURL=10-person-section-display.css.map */

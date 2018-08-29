@@ -1,0 +1,38 @@
+@import "../../01-atoms/01-colors/01-colors";
+
+.person-container {
+  .person-photo {
+    background-size: cover;
+    background-position: top center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    &.small {
+      width: 76px;
+      height: 76px;
+    }
+  }
+  .person-bio {
+    display: inline-block;
+    .person-name {
+      a {
+        text-decoration: underline;
+        color: $color-blue;
+        > * {
+          display: inline-block;
+          text-decoration: underline;
+        }
+      }
+    }
+    .person-title {
+      color: $color-gray;
+      font-weight: 600;
+    }
+    .person-subtitle {
+      color: $color-gray;
+      font-weight: normal;
+    }
+  }
+}
