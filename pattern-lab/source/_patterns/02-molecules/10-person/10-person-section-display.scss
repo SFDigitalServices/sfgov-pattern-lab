@@ -2,6 +2,10 @@
 
 .sfgov-paragraph-people {
   margin: 20px;
+  border-top: 1px solid $color-gray-light;
+  &.sfgov-paragraph-people-single {
+    border-top: none;
+  }
   .sfgov-people-header {
     margin-bottom: 45px;
     h3 {
@@ -15,16 +19,33 @@
       margin: 0;
     }
   }
+  .person-item-single {
+    .person-item {
+      width: auto;
+      .person-photo {
+        width: 150px;
+        height: 150px;
+        vertical-align: middle;
+        margin-right: 40px;
+      }
+      .person-bio {
+        width: auto;
+        .person-name {
+          font-size: 2rem;
+          font-family: "Merriweather","Georgia",sans-serif;
+          font-weight: bold;
+          a {
+            text-decoration: none;
+            > * {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-.__person.field__items {
-  // text-align: justify;
-  // margin: 20px;
-  // &:after {
-  //   content: '';
-  //   width: 100%;
-  //   display: inline-block;
-  // }
-}
+
 .person-item {
   display: inline-block;
   width: 33%;
@@ -35,16 +56,12 @@
   .person-photo {
     background-size: cover;
     background-position: top center;
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
     display: inline-block;
     vertical-align: top;
     margin-right: 15px;
-    &.small {
-      width: 76px;
-      height: 76px;
-    }
+    width: 76px;
+    height: 76px;
   }
   .person-bio {
     display: inline-block;
