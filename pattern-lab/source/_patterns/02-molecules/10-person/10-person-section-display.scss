@@ -1,17 +1,19 @@
 @import "../../01-atoms/01-colors/01-colors";
 
 .__person.field__items {
-  text-align: justify;
-  &:after {
-    content: '';
-    width: 100%;
-    display: inline-block;
-  }
+  // text-align: justify;
+  margin: 20px;
+  // &:after {
+  //   content: '';
+  //   width: 100%;
+  //   display: inline-block;
+  // }
 }
 .person-item {
   display: inline-block;
-  width: 27%;
+  width: 33%;
   margin-bottom: 25px;
+  vertical-align: top;
 }
 .person-container {
   .person-photo {
@@ -30,6 +32,7 @@
   }
   .person-bio {
     display: inline-block;
+    width: 160px;
     .person-name {
       a {
         text-decoration: underline;
