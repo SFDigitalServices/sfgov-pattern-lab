@@ -1,8 +1,24 @@
 @import "../../01-atoms/01-colors/01-colors";
 
+.sfgov-paragraph-people {
+  margin: 20px;
+  .sfgov-people-header {
+    margin-bottom: 45px;
+    h3 {
+      color: #205493;
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      font-family: "Merriweather","Georgia",sans-serif;
+      font-weight: bold;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
 .__person.field__items {
   // text-align: justify;
-  margin: 20px;
+  // margin: 20px;
   // &:after {
   //   content: '';
   //   width: 100%;
