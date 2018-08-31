@@ -1,57 +1,5 @@
 @import "../../01-atoms/01-colors/01-colors";
 
-.sfgov-paragraph-people {
-  margin: 20px;
-  border-top: 1px solid $color-gray-light;
-  &.sfgov-paragraph-people-single {
-    border-top: none;
-  }
-  .sfgov-people-header {
-    margin-bottom: 45px;
-    h3 {
-      color: #205493;
-      font-size: 2.4rem;
-      margin-bottom: 20px;
-      font-family: "Merriweather","Georgia",sans-serif;
-      font-weight: bold;
-    }
-    p {
-      margin: 0;
-    }
-  }
-  .person-item-single {
-    .person-item {
-      width: auto;
-      .person-photo {
-        width: 150px;
-        height: 150px;
-        vertical-align: middle;
-        margin-right: 40px;
-      }
-      .person-bio {
-        width: auto;
-        .person-name {
-          font-size: 2rem;
-          font-family: "Merriweather","Georgia",sans-serif;
-          font-weight: bold;
-          a {
-            text-decoration: none;
-            > * {
-              text-decoration: none;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-.person-item {
-  display: inline-block;
-  width: 33%;
-  margin-bottom: 25px;
-  vertical-align: top;
-}
 .person-container {
   .person-photo {
     background-size: cover;
@@ -66,6 +14,7 @@
   .person-bio {
     display: inline-block;
     width: 160px;
+    text-align: left;
     .person-name {
       a {
         text-decoration: underline;

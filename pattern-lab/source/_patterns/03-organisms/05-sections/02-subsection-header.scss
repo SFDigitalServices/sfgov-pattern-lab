@@ -1,0 +1,10 @@
+@import '../../01-atoms/01-colors/01-colors';
+
+.sfgov-subsection-header {
+  h3 {
+    color: $color-blue;
+    font-size: 2.4rem;
+    font-family: "Merriweather","Georgia",sans-serif;
+    font-weight: bold;
+  }
+}

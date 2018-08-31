@@ -1,0 +1,42 @@
+@import "../../01-atoms/01-colors/01-colors";
+
+.person-container {
+  &.person-hero {
+    .person-photo {
+      background-size: cover;
+      background-position: top center;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 40px;
+      width: 150px;
+      height: 150px;
+    }
+    .person-bio {
+      display: inline-block;
+      width: 160px;
+      text-align: left;
+      .person-name {
+        font-size: 2rem;
+        font-family: "Merriweather","Georgia",sans-serif;
+        font-weight: bold;
+        a {
+          text-decoration: none;
+          color: $color-blue;
+          > * {
+            display: inline-block;
+            text-decoration: none;
+          }
+        }
+      }
+      .person-title {
+        color: $color-gray;
+        font-weight: 600;
+      }
+      .person-subtitle {
+        color: $color-gray;
+        font-weight: normal;
+      }
+    }
+  }
+}
