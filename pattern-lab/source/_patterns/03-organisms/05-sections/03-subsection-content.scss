@@ -1,8 +1,16 @@
+@import "../../00-protons/01-grid";
+
 .sfgov-three-column {
   > * {
     display: inline-block;
     width: 33%;
     margin-bottom: 25px;
     vertical-align: top;
+  }
+  @include media-max($medium-screen) {
+    > * {
+      width: 49%;
+      text-align: center;
+    }
   }
 }
