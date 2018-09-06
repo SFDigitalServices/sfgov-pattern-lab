@@ -2,6 +2,7 @@
 @import "../../00-protons/01-grid";
 
 .person-container {
+  margin-bottom: 40px;
   &.person-hero {
     .person-photo {
       background-size: cover;
@@ -15,7 +16,7 @@
     }
     .person-bio {
       display: inline-block;
-      width: 160px;
+      width: auto;
       text-align: left;
       .person-name {
         font-size: 2rem;
