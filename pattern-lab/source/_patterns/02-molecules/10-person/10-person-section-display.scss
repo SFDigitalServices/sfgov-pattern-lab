@@ -12,6 +12,13 @@
     margin-right: 15px;
     width: 76px;
     height: 76px;
+    overflow: hidden;
+    img {
+      max-width: 76px;
+      max-height: 76px;
+      min-width: 76px;
+      min-height: 76px;
+    }
   }
   .person-bio {
     display: inline-block;
