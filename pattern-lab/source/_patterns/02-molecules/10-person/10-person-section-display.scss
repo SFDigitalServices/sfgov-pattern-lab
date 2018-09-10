@@ -6,6 +6,7 @@
   .person-photo {
     background-size: cover;
     background-position: top center;
+    background-color: #333;
     border-radius: 50%;
     display: inline-block;
     vertical-align: top;
@@ -16,8 +17,6 @@
     img {
       max-width: 76px;
       max-height: 76px;
-      min-width: 76px;
-      min-height: 76px;
     }
   }
   .person-bio {
