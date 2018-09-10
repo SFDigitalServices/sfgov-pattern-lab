@@ -1,9 +1,15 @@
 @import '../../01-atoms/01-colors/01-colors';
+@import "../../00-protons/02-mixins";
+@import "../../00-protons/01-grid";
+@import "../../00-protons/00-breakpoints";
 
 .sfgov-subheader {
   background: $color-gray-lightest;
   padding: 40px 0;
-
+  @include media-max($narrow-screen) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   h4 {
     margin-top: 0;
   }

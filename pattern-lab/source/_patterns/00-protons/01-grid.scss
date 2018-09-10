@@ -119,6 +119,7 @@ $susy: (
     float: left;
   }
   @include media($mobile-screen) {
+    
     width: 100%;
     float: inherit;
   }
@@ -168,6 +169,13 @@ $susy: (
     display: flex;
     flex-direction: column;
   }
+  @include media-max($narrow-screen) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include media-max($medium-screen) {
+    padding: 0;
+  }
   .sfgov-container--content-left {
     padding: 39px 25px 70px 25px;
     @include media-max($medium-screen) {
@@ -177,6 +185,7 @@ $susy: (
       @include clearfix;
       width: susy-span(7.8 narrow of 12 narrow);
       float: left;
+      padding: 0;
     }
     @include media($narrow-screen) {
       padding: 0;

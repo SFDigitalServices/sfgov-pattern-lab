@@ -9,6 +9,10 @@
   @include media($medium-screen + 1) {
     padding: 4rem 0;
   }
+  @include media-max($narrow-screen) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .content-head--image {
     height: 100%;
     padding: 3rem 0 1.5rem 0;
