@@ -119,7 +119,7 @@ $susy: (
     float: left;
   }
   @include media($mobile-screen) {
-    
+
     width: 100%;
     float: inherit;
   }
@@ -198,6 +198,7 @@ $susy: (
     margin-bottom: 25px;
     @include media-max($medium-screen) {
       order: 1;
+      margin-bottom: 0;
     }
     @include media($medium-screen + 1) {
       width: susy-span(4 narrow of 12 narrow);
