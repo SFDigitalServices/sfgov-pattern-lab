@@ -16,8 +16,10 @@
       height: 150px;
       overflow: hidden;
       img {
-        max-width: 150px;
-        max-height: 150px;
+        max-width: 1px;
+        max-height: 1px;
+        position: relative;
+        left: -999px;
       }
     }
     .person-bio {
