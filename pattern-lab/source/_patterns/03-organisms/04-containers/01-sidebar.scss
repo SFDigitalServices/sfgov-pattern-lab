@@ -7,7 +7,7 @@
   .sfgov-sidebar-container {
     padding: 25px;
     .field {
-      &:last-child {
+      >&:last-child {
         margin-bottom: 25px;
       }
     }
