@@ -1,0 +1,54 @@
+@import "../../01-atoms/02-typography/01-fonts.scss";
+@import "../../01-atoms/01-colors/01-colors.scss";
+@import "../../00-protons/00-breakpoints";
+
+.sfgov-footer-navigation-bottom {
+  @include media($narrow-screen) {
+    width: 450px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: right;
+  }
+  ul {
+    @include media-max($medium-screen - 1) {
+      &::after,
+      &::before {
+        content: '';
+        display: table;
+        clear: both;
+      }
+    }
+    padding: 0;
+    margin: 0;
+    li {
+      @include media-max($medium-screen - 1) {
+        border-top: 1px solid $color-gray-dark;
+        border-bottom: 0;
+        &:last-child {
+          border-bottom: 1px solid $color-gray-dark;
+        }
+      }
+      @include media($medium-screen) {
+        display: inline-block;
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+      @media screen and (min-width: $medium-screen + 1) and (max-width: $narrow-screen) {
+        &:first-child {
+          padding-left: 17px;
+        }
+      }
+      padding: 15px 40px 15px 15px;
+      margin-bottom: 0;
+      a {
+        @include source-sans-pro;
+        font-size: 17px;
+        color: $color-white;
+        line-height: 22px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}
