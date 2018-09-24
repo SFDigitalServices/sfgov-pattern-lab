@@ -43,10 +43,9 @@
       margin-bottom: 0;
       a {
         @include source-sans-pro;
-        font-size: 17px;
+        font-size: 15px;
         color: $color-white;
         line-height: 22px;
-        font-weight: bold;
         text-decoration: none;
       }
     }
