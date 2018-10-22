@@ -62,4 +62,14 @@
       }
     }
   }
+  &.sfgov-fb-search-result {
+    .content-type {
+      i, span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 16px;
+        margin-right: 12px;
+      }
+    }
+  }
 }
