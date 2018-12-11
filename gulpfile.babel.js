@@ -17,6 +17,8 @@ import concat from 'gulp-concat';
 import babel from 'gulp-babel';
 import imagemin from 'gulp-imagemin';
 
+let importOnce = require('node-sass-import-once');
+
 // Require a copy of the JS compiler for uswds.
 // the gulptask is called "javascript"
 // the following task compiles the node_modules/uswds/src/js/start.js file.
@@ -69,7 +71,8 @@ gulp.task('pl:css', () => {
         .pipe(sass({
             outputStyle: 'compressed',
             errLogToConsole: true,
-            includePaths: config.css.includePaths
+            includePaths: config.css.includePaths,
+            importer: importOnce
         }))
         .pipe(autoprefix('last 2 versions', '> 1%', 'ie 9', 'ie 10'))
         .pipe(sourcemaps.write('./'))
