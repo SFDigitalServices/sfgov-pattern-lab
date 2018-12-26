@@ -1,7 +1,7 @@
 // Import dependencies for USWDS.
 
 // Vendor -------------- //
-@import '../../../node_modules/uswds/src/stylesheets/core/variables-vendor';
+@import 'core/variables-vendor';
 // instead of @import 'lib/bourbon'; the following:
 @import "../../../node_modules/bourbon/core/bourbon";
 
@@ -19,43 +19,16 @@ $helvetica: 'Helvetica', sans-serif;
 $georgia: 'Georgia', sans-serif;
 $image-path: './../images';
 
-@import '../../../node_modules/uswds/src/stylesheets/core/variables';
-@import '../../../node_modules/uswds/src/stylesheets/core/utilities';
-@import '../../../node_modules/uswds/src/stylesheets/core/base';
+@import 'core/variables';
+@import 'core/utilities';
+@import 'core/base';
 
 // Elements -------------- //
 // Styles basic HTML elements
-@import '../../../node_modules/uswds/src/stylesheets/elements/buttons';
-@import '../../../node_modules/uswds/src/stylesheets/elements/embed';
-@import '../../../node_modules/uswds/src/stylesheets/elements/figure';
-@import '../../../node_modules/uswds/src/stylesheets/elements/inputs';
-@import '../../../node_modules/uswds/src/stylesheets/elements/labels';
-@import '../../../node_modules/uswds/src/stylesheets/elements/list';
-@import '../../../node_modules/uswds/src/stylesheets/elements/table';
-@import '../../../node_modules/uswds/src/stylesheets/elements/typography';
-
-// Components -------------- //
-@import '../../../node_modules/uswds/src/stylesheets/components/accordions';
-@import '../../../node_modules/uswds/src/stylesheets/components/banner';
-@import '../../../node_modules/uswds/src/stylesheets/components/footer';
-@import '../../../node_modules/uswds/src/stylesheets/components/forms';
-@import '../../../node_modules/uswds/src/stylesheets/components/graphic-list';
-@import '../../../node_modules/uswds/src/stylesheets/components/header';
-@import '../../../node_modules/uswds/src/stylesheets/components/hero';
-@import '../../../node_modules/uswds/src/stylesheets/components/layout';
-@import '../../../node_modules/uswds/src/stylesheets/components/media-block';
-@import '../../../node_modules/uswds/src/stylesheets/components/search';
-@import '../../../node_modules/uswds/src/stylesheets/components/section';
-@import '../../../node_modules/uswds/src/stylesheets/components/sidenav';
-@import '../../../node_modules/uswds/src/stylesheets/components/skipnav';
+@import "elements/*.scss";
+@import "components/*.scss";
 
 // Styles inside patterns.
-
-@import "../_patterns/00-protons/*.scss";
-@import "../_patterns/01-atoms/**/*.scss";
-@import "../_patterns/02-molecules/**/*.scss";
-@import "../_patterns/03-organisms/**/*.scss";
-@import "../_patterns/04-templates/**/*.scss";
-@import "../_patterns/05-pages/**/*.scss";
+@import "overrides/**/*.scss";
 
 
