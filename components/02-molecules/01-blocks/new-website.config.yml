@@ -1,0 +1,5 @@
+context:
+    blocks:
+        head_text: "This is a new website for San Francisco"
+        body_text: "Do you have ideas or feedback on the new website? It's still in progress, and we'd love to know how we can make it better. <a href=\"#\">Learn more about the website project</a>"
+

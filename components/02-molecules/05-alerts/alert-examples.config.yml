@@ -1,0 +1,18 @@
+context:
+    alerts: 
+        - type: success
+          role: alertdialog
+          title: Success Status
+          content: Donec mollis hendrerit risus. Sed consequat leo eget bibendum sodales augue <a href=\#\>velit cursus</a> nunc quis gravida magna
+        - type: warning
+          role: alertdialog
+          title: Warning Status
+          content: Donec mollis hendrerit risus. Sed consequat leo eget bibendum sodales augue <a href=\#\>velit cursus</a> nunc quis gravida magna
+        - type: error
+          role: alertdialog
+          title: Error Status
+          content: Donec mollis hendrerit risus. Sed consequat leo eget bibendum sodales augue <a href=\#\>velit cursus</a> nunc quis gravida magna
+        - type: info
+          role: alertdialog
+          title: Information Status
+          content: Donec mollis hendrerit risus. Sed consequat leo eget bibendum sodales augue <a href=\#\>velit cursus</a> nunc quis gravida magna

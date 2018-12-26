@@ -1,0 +1,9 @@
+context: 
+    - label: View
+      link: "#"
+    - label: Edit
+      link: "#"
+    - label: Delete
+      link: "#"
+    - label: Revisions
+      link: "#" 

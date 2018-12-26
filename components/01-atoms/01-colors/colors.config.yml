@@ -1,0 +1,78 @@
+context: 
+    colorset:
+        - label: color-blue
+          color: "#0071bc"
+        - label: color-blue-darker
+          color: "#205493"
+        - label: color-blue-darkest
+          color: "#112e51"
+        - label: color-aqua
+          color: "#02bfe7"
+        - label: color-aqua-dark
+          color: "#00a6d2"
+        - label: color-aqua-darkest
+          color: "#046b99"
+        - label: color-aqua-light
+          color: "#9bdaf1"
+        - label: color-aqua-lightest
+          color: "#e1f3f8"
+        - label: color-red
+          color: "#e31c3d"
+        - label: color-red-dark
+          color: "#cd2026"
+        - label: color-red-darkest
+          color: "#981b1e"
+        - label: color-red-light
+          color: "#e59393"
+        - label: color-red-lightest
+          color: "#f9dede"
+        - label: color-white
+          color: "#ffffff"
+        - label: color-black
+          color: "#000000"
+        - label: color-black-light
+          color: "#212121"
+        - label: color-gray-dark
+          color: "#323a45"
+        - label: color-gray
+          color: "#5b616b"
+        - label: color-gray-medium
+          color: "#757575"
+        - label: color-gray-light
+          color: "#aeb0b5"
+        - label: color-gray-lighter
+          color: "#d6d7d9"
+        - label: color-gray-lightest
+          color: "#f1f1f1"
+        - label: color-gray-warm-dark
+          color: "#494440"
+        - label: color-gray-warm-light
+          color: "#e4e2e0"
+        - label: color-gray-cool-light
+          color: "#dce4ef"
+        - label: color-gold
+          color: "#fdb81e"
+        - label: color-gold-light
+          color: "#f9c642"
+        - label: color-gold-lighter
+          color: "#fad980"
+        - label: color-gold-lightest
+          color: "#fff1d2"
+        - label: color-green
+          color: "#2e8540"
+        - label: color-green-light
+          color: "#4aa564"
+        - label: color-green-lighter
+          color: "#94bfa2"
+        - label: color-green-lightest
+          color: "#e7f4e4"      
+        - label: color-cool-blue
+          color: "#205493"
+        - label: color-cool-blue-light
+          color: "#4773aa"
+        - label: color-cool-blue-lighter
+          color: "#8ba6ca"
+        - label: color-cool-blue-lightest
+          color: "#dce4ef"
+        - label: color-purple
+          color: "#4c2c92"

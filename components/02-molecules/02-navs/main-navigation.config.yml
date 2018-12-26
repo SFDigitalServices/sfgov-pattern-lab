@@ -1,0 +1,6 @@
+context:
+    main_navigation:
+        - label: Services
+          link: "#"
+        - label: Departments
+          link: "#"

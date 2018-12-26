@@ -1,0 +1,5 @@
+context:
+  alpha_banner_message: '@alpha-banner.alpha_banner_message'
+  header: '@header'
+  hero-banner: '@hero-banner'
+  footer: '@footer'

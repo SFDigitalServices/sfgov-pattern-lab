@@ -1,0 +1,5 @@
+context:
+    footer: 
+        image_url: images/sf-logo-white.svg
+        image_alt: Logo alt text
+        text: City and County of San Francisco

@@ -1,8 +1,0 @@
-{
-  "alert": {
-    "type": "success",
-    "role": "alertdialog",
-    "title": "Success Status",
-    "content": "Donec mollis hendrerit risus. Sed consequat, leo eget bibendum sodales, augue <a href=\"#\">velit cursus</a> nunc, quis gravida magna"
-  }
-}
