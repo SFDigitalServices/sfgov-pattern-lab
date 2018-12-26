@@ -1,0 +1,41 @@
+{
+  "name": "components",
+  "css": {
+    "file" : "src/sass/_all.scss",
+    "src": [
+      "public/css/*.scss",
+      "public/css/**/*.scss"
+    ],
+    "dist_folder": "public/css"
+  },
+  "js": {
+    "src": [
+      "public/js/*.js",
+      "public/js/**/*.js"
+    ]
+  },
+  "pattern_lab": {
+    "javascript": {
+      "src": [
+        "public/js/components.js",
+        "public/js/main-navigation.js"
+      ],
+      "destination": [
+        "public/js"
+      ]
+    }
+  },
+  "images": {
+    "src": [
+      "public/images/**/*"
+    ]
+  },
+  "autoprefixer": [
+    "last 2 versions",
+    "> 1%",
+    "ie 11"
+  ],
+  "sass": {
+    "outputStyle": "expanded"
+  }
+}
