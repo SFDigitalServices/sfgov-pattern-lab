@@ -1,0 +1,60 @@
+@import "../../01-atoms/01-colors/01-colors";
+@import "../../00-protons/01-grid";
+
+.person-container {
+  margin-bottom: 35px;
+  .person-photo {
+    background-size: cover;
+    background-position: top center;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    width: 76px;
+    height: 76px;
+    overflow: hidden;
+    img {
+      max-width: 1px;
+      max-height: 1px;
+      position: relative;
+      left: -999px;
+    }
+  }
+  .person-bio {
+    display: inline-block;
+    width: 160px;
+    text-align: left;
+    .person-name {
+      a {
+        text-decoration: underline;
+        color: $color-blue;
+        > * {
+          display: inline-block;
+          text-decoration: underline;
+        }
+      }
+    }
+    .person-title {
+      color: $color-gray;
+      font-weight: 600;
+    }
+    .person-subtitle {
+      color: $color-gray;
+      font-weight: normal;
+    }
+  }
+  @include media-max($medium-screen) {    
+    .person-photo {
+      display: block;
+      margin: 10px auto;
+      width: 100px;
+      height: 100px;
+    }
+    .person-bio {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

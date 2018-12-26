@@ -1,0 +1,82 @@
+@import "../../00-protons/01-grid";
+@import "../../01-atoms/01-colors/01-colors.scss";
+
+.department-search-result {
+  .department-search-result--container {
+    > a {
+      text-decoration: none;
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 2rem;
+      }
+    }
+    padding: 30px 0 30px 0;
+    border-bottom: 1px solid $color-gray-light;
+    .content-type {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 16px;
+      span {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        padding: 3px 0 0 12px;
+      }
+    }
+    .phone-address--container {
+      display: flex;
+      flex-direction: column;
+      @include media($medium-screen) {
+        flex-direction: row;
+      }
+      .address--container,
+      .phone--container {
+        display: flex;
+        flex-direction: row;
+        .phone,
+        .address {
+          line-height: 30px;
+          margin-left: 10px;
+          color: $color-gray;
+        }
+      }
+      .phone--container {
+        margin-bottom: 10px;
+        @include media($medium-screen) {
+          min-width: 183px;
+          width: susy-span(2 narrow of 12 narrow);
+          margin-bottom: 0;
+        }
+        a {
+          text-decoration: none;
+          color: $color-gray;
+        }
+      }
+      .address--container {
+        @include media($medium-screen) {
+          width: susy-span(9 narrow of 12 narrow);
+        }
+      }
+    }
+    h3.title {
+      margin: 0 0 10px 0;
+    }
+    p.body {
+      margin: 0 0 10px 0;
+      color: $color-gray;
+      @include media($medium-screen) {
+        max-width: 566px;
+      }
+    }
+    @include media-max($narrow-screen) {
+      margin: 0 25px;
+      padding: 25px 0;
+      a {
+        h3 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}

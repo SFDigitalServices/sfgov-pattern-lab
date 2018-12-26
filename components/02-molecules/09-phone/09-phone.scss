@@ -1,0 +1,27 @@
+@import "../../00-protons/01-grid";
+@import "../../01-atoms/01-colors/01-colors";
+
+  .phone-address--container {
+    display: flex;
+    flex-direction: column;
+    @include media($medium-screen) {
+      flex-direction: row;
+    }
+    .phone--container {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      @include media($medium-screen) {
+        min-width: 183px;
+        width: susy-span(2 narrow of 12 narrow);
+        margin-bottom: 0;
+      };
+      .phone{
+        line-height: 30px;
+        margin-left: 10px;
+        color: $color-gray;
+      };
+    }
+  }
+
+
