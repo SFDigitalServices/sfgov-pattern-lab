@@ -11,3 +11,6 @@ fractal.components.set('path', __dirname + '/components');
 
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/docs');
+
+/* Tell the Fractal web preview plugin where to look for static assets. */
+fractal.web.set('static.path', path.join(__dirname, 'public'));
