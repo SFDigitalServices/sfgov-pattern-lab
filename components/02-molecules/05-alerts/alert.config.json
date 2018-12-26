@@ -1,0 +1,43 @@
+{
+  "title": "Alert",
+  "collated": true,
+  "default": "success",
+  "variants": [
+    {
+      "name": "success",
+      "context": {
+        "type": "success",
+        "role": "alertdialog",
+        "title": "Success Status",
+        "content": "Donec mollis hendrerit risus. Sed consequat leo eget bibendum sodales augue <a href='#'>velit cursus</a> nunc quis gravida magna"
+      }
+    },
+    {
+      "name": "warning",
+      "context": {
+        "type": "warning",
+        "role": "alertdialog",
+        "title": "Warning Status",
+        "content": "Donec mollis hendrerit risus. Sed consequat leo eget bibendum sodales augue <a href='#'>velit cursus</a> nunc quis gravida magna"
+      }
+    },
+    {
+      "name": "error",
+      "context": {    
+        "type": "error",
+        "role": "alertdialog",
+        "title": "Error Status",
+        "content": "Donec mollis hendrerit risus. Sed consequat leo eget bibendum sodales augue <a href='#'>velit cursus</a> nunc quis gravida magna"
+      }
+    },
+    {
+      "name": "info",
+      "context": {
+        "type": "info",
+        "role": "alertdialog",
+        "title": "Information Status",
+        "content": "Donec mollis hendrerit risus. Sed consequat leo eget bibendum sodales augue <a href='#'>velit cursus</a> nunc quis gravida magna"
+      }
+    }
+  ]
+}
