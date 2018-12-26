@@ -1,1 +1,0 @@
-{"version":3,"sources":["pattern-lab/source/_patterns/03-organisms/01-header/header.scss"],"names":[],"mappings":"AAAA;EACE,gBAAe;CAIhB;;AALD;EAGI,4BAAoB;EAApB,4BAAoB;EAApB,qBAAoB;CACrB","file":"header.css","sourcesContent":[".sfgov-nav-container {\n  padding: 17px 0;\n  .sfgov-nav-container__content {\n    display: inline-flex;\n  }\n}\n"]}
