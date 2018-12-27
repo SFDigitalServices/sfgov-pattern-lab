@@ -67,7 +67,6 @@ gulp.task('pl:css', () => {
         }))
         .pipe(autoprefix('last 2 versions', '> 1%', 'ie 9', 'ie 10'))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(config.css.pattern_lab_destination))
         .pipe(gulp.dest(config.css.dist_folder))
         .pipe(browserSync.reload({stream: true, match: '**/*.css'}));
 });
@@ -75,7 +74,7 @@ gulp.task('pl:css', () => {
 gulp.task('pl:imagemin', () => {
     return gulp.src(config.images.src)
         .pipe(imagemin())
-        .pipe(gulp.dest('./dist/images'))
+        .pipe(gulp.dest('./public/dist/images'))
 });
 
 // Watch task.

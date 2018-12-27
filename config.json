@@ -1,12 +1,12 @@
 {
   "name": "components",
   "css": {
-    "file" : "src/sass/_all.scss",
+    "file" : "public/css/all.scss",
     "src": [
       "public/css/*.scss",
       "public/css/**/*.scss"
     ],
-    "dist_folder": "public/css"
+    "dist_folder": "public/dist/css"
   },
   "js": {
     "src": [
@@ -21,7 +21,7 @@
         "public/js/main-navigation.js"
       ],
       "destination": [
-        "public/js"
+        "public/dist/js"
       ]
     }
   },

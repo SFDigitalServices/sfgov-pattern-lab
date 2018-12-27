@@ -16,7 +16,7 @@ fractal.components.set('path', __dirname + '/components');
 fractal.docs.set('path', __dirname + '/docs');
 
 /* Tell the Fractal web preview plugin where to look for static assets. */
-fractal.web.set('static.path', path.join(__dirname, 'public'));
+fractal.web.set('static.path', path.join(__dirname, '/public/dist'));
 
 /* Add Twig adapter. */
 const twigAdapter = require('@wondrousllc/fractal-twig-drupal-adapter');

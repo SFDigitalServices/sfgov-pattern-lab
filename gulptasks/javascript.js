@@ -16,7 +16,7 @@ gulp.task(task, function (done) {
 
   var defaultStream = browserify({
     // entries: './node_modules/uswds/src/js/start.js',
-    entries: './pattern-lab/source/js/start.js',
+    entries: './public/js/start.js',
     debug: true,
   })
   .transform('babelify', {
@@ -28,7 +28,7 @@ gulp.task(task, function (done) {
     .pipe(source('uswds.js'))
     .pipe(buffer())
     .pipe(rename({ basename: 'uswds' }))
-    .pipe(gulp.dest('dist/uswds/js'));
+    .pipe(gulp.dest('public/dist/uswds/js'));
 
   stream
     .pipe(sourcemaps.init({ loadMaps: true }))
@@ -38,8 +38,7 @@ gulp.task(task, function (done) {
       suffix: '.min',
     }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/uswds/js'))
-    .pipe(gulp.dest('pattern-lab/public/js/dist'));
+    .pipe(gulp.dest('public/dist/js/'));
 
   return stream;
 
