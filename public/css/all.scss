@@ -1,0 +1,32 @@
+// Import dependencies for USWDS.
+
+// Vendor -------------- //
+@import 'core/variables-vendor';
+// instead of @import 'lib/bourbon'; the following:
+@import "../../node_modules/bourbon/core/bourbon";
+
+// instead of @import 'lib/neat'; the following:
+@import "../../node_modules/bourbon-neat/app/assets/stylesheets/settings/*.scss";
+@import "../../node_modules/bourbon-neat/app/assets/stylesheets/functions/*.scss";
+@import "../../node_modules/bourbon-neat/app/assets/stylesheets/mixins/*.scss";
+@import "../../node_modules/bourbon-neat/app/assets/stylesheets/grid/*.scss";
+
+//@import 'lib/normalize';
+@import '../../node_modules/normalize.scss/normalize';
+
+// Core -------------- //
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/base';
+
+// Elements -------------- //
+// Styles basic HTML elements
+@import "elements/*.scss";
+@import "components/*.scss";
+
+// Styles inside patterns.
+@import "overrides/**/*.scss";
+
+@import "pattern-scaffolding.css"
+
+
