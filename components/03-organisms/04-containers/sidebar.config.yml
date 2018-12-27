@@ -1,0 +1,7 @@
+# TODO: replace content with sidebar-block component
+
+context:
+    content: "<a href='https://hsh.sfgov.org'>hsh.sfgov.org</a>"
+    title: Get help
+    subtitle: Website
+    side: right

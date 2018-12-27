@@ -1,4 +1,5 @@
 context:
+    url: "#"
     sidebar_card: 
         title: Sidebar Card Title
         body: Donec mollis hendrerit risus. Sed consequat leo eget bibendum sodales augue velit cursus nunc quis gravida magna mi a libero. Donec id justo. Pellentesque posuere.

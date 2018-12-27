@@ -1,0 +1,5 @@
+context:
+    img:
+        square:
+            src: "http://placeimg.com/300/300/nature"
+            alt: "Square"
