@@ -1,8 +1,8 @@
 context:
-    h1: "An important h1 heading style."
-    h2: "another importan heading style."
-    h3: "another importan heading style."
-    h4: "another importan heading style."
-    h5: "another importan heading style."
-    h6: "another importan heading style."
+    h1: "Heading 1"
+    h2: "Heading 2"
+    h3: "Heading 3"
+    h4: "Heading 4"
+    h5: "Heading 5"
+    h6: "Heading 6"
     title: Services
