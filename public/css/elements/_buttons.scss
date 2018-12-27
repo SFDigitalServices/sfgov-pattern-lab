@@ -1,26 +1,4 @@
-// Buttons variables
-
-$button-stroke: inset 0 0 0 2px;
-
 // Buttons
-
-// This mixin is only needed until we fully remove the
-// deprecated usa-button-disabled style.
-@mixin disabledesque {
-  background-color: $color-gray-lighter;
-  pointer-events: none;
-
-  &:hover,
-  &.usa-button-hover,
-  &:active,
-  &.usa-button-active,
-  &:focus,
-  &.usa-focus {
-    background-color: $color-gray-lighter;
-    border: 0;
-    box-shadow: none;
-  }
-}
 
 /* stylelint-disable selector-no-qualifying-type */
 .usa-button,

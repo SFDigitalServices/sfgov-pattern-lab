@@ -1,4 +1,5 @@
-@import '02-mixins';
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 .visually-hidden {
   @include visually-hidden;

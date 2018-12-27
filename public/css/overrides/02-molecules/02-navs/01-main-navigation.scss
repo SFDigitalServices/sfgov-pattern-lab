@@ -1,8 +1,5 @@
-@import "../../01-atoms/02-typography/01-fonts.scss";
-@import "../../01-atoms/01-colors/01-colors";
-@import "../../01-atoms/03-buttons/01-buttons";
-@import "../../00-protons/02-mixins";
-@import "../../00-protons/01-grid";
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 $site-max-width: 1040px;
 $z-index-header:  7000;

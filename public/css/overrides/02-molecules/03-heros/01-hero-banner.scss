@@ -1,5 +1,5 @@
-@import "../../01-atoms/02-typography/01-fonts.scss";
-@import "../../00-protons/01-grid";
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 .sfgov-banner {
   background: $color-aqua-lightest;

@@ -1,4 +1,5 @@
-@import "../../00-protons/01-grid";
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 .sfgov-nav-container {
   @include clearfix;

@@ -1,11 +1,6 @@
-// These variables drive almost every aspect of the U.S. Web Design
-// system. Every variable is declared as !default so that it can be
+// Every variable is declared as !default so that it can be
 // overridden by a previous import.
 //
-// XXX Do not modify this file!
-//
-// If you want to override a variable, set that variable in one of your
-// own partials, then @import '{path/to/uswds/}core/variables'.
 
 // Typography
 // Removing the !default from $em-base so we are not inheriting that
@@ -25,6 +20,10 @@ $base-line-height:    1.5 !default;
 $heading-line-height: 1.3 !default;
 $lead-line-height:    1.7 !default;
 
+$helvetica: 'Helvetica', sans-serif;
+$georgia: 'Georgia', sans-serif;
+$image-path: '/images';
+
 $font-sans:           'Source Sans Pro', $helvetica !default;
 $font-serif:          'Merriweather', $georgia !default;
 
@@ -37,7 +36,7 @@ $color-blue:                 #0071bc !default;
 $color-blue-darker:          #205493 !default;
 $color-blue-darkest:         #112e51 !default;
 
-$color-aqua:                 #02bfe7 !default;
+$color-aqua:                 #02c0e7 !default;
 $color-aqua-dark:            #00a6d2 !default;
 $color-aqua-darkest:         #046b99 !default;
 $color-aqua-light:           #9bdaf1 !default;
@@ -105,10 +104,15 @@ $color-visited:              $color-purple !default;
 $color-shadow:               rgba(#000, 0.3) !default;
 $color-transparent:          rgba(#000, 0) !default;
 
-// Mobile First Breakpoints
+// Breakpoints
+$tiny-screen: 320px;
+$mobile-screen: 480px;
 $small-screen:  481px !default;
 $medium-screen: 600px !default;
+$medium-screen: 769px;
+$narrow-screen: 950px;
 $large-screen:  1201px !default;
+$wide-screen: 1220px;
 
 // Grid column counts by screen size
 $grid-columns-small: 1 !default;
@@ -120,13 +124,6 @@ $small: new-breakpoint(min-width $small-screen $grid-columns-small) !default;
 $medium: new-breakpoint(min-width $medium-screen $grid-columns-medium) !default;
 $large: new-breakpoint(min-width $large-screen $grid-columns-large) !default;
 
-// Set the base path for assets (used for font and image paths below)
-$asset-path: '../' !default;
-
-// Relative font and image file paths
-$font-path: '#{$asset-path}fonts' !default;
-$image-path: '#{$asset-path}img' !default;
-
 // Set $asset-pipeline to true if you're using the Rails Asset Pipeline
 $asset-pipeline:      false !default;
 
@@ -136,13 +133,12 @@ $lead-max-width:                77rem !default;
 $site-max-width:                1040px !default;
 $site-margins:                  3rem !default;
 $site-margins-mobile:           1.5rem !default;
-$article-max-width:             600px !default;
 $input-max-width:               46rem !default;
 $label-border-radius:           2px !default;
 $checkbox-border-radius:        2px !default;
 $border-radius:                 3px !default;
 $button-border-radius:          5px !default;
-$box-shadow:                    0 0 2px $color-shadow !default;
+$button-stroke: inset 0 0 0 2px;
 $focus-outline:                 2px dotted $color-gray-light !default;
 $focus-spacing:                 3px !default;
 $nav-width:                     951px !default;

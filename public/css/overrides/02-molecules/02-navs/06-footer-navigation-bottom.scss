@@ -1,6 +1,5 @@
-@import "../../01-atoms/02-typography/01-fonts.scss";
-@import "../../01-atoms/01-colors/01-colors.scss";
-@import "../../00-protons/00-breakpoints";
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 .sfgov-footer-navigation-bottom {
   @include media($narrow-screen) {

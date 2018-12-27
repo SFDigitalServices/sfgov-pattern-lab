@@ -1,56 +1,5 @@
-@import "../../../../node_modules/susy/sass/susy-prefix";
-@import "../../../../node_modules/susy/sass/plugins/svg-grid";
-@import '../../../../node_modules/mq-scss/mq';
-@import '../../../../node_modules/gutter-grid/grid-mixin';
-@import '../../../../node_modules/gutter-grid/grid-classes';
-@import "02-mixins";
-@import "00-breakpoints";
-
-@mixin media($bp) {
-  @media screen and (min-width: #{$bp}) {
-    @content;
-  }
-}
-
-@mixin media-max($bp) {
-  @media screen and (max-width: #{$bp}) {
-    @content;
-  }
-}
-
-// Basic grid settings.
-$susy: (
-  'columns': susy-repeat(12),
-  'gutters': 14px,
-  'spread': 'narrow',
-  'container-spread': 'narrow'
-);
-
-@mixin sfgov-container-full {
-  @include clearfix;
-  @include media($narrow-screen) {
-    width: 949px;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
-@mixin sfgov-container-full--no-padding() {
-  @include clearfix;
-  @include media($narrow-screen) {
-    width: 949px;
-    margin: 0 auto;
-  }
-}
-
-@mixin sfgov-grid-two-columns--padding() {
-  @include clearfix;
-  @include media($narrow-screen) {
-    width: 949px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 .sfgov-container--full {
   @include clearfix;

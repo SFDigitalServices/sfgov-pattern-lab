@@ -1,0 +1,496 @@
+@import "../../../node_modules/susy/sass/susy-prefix";
+@import "../../../node_modules/susy/sass/plugins/svg-grid";
+@import '../../../node_modules/mq-scss/mq';
+@import '../../../node_modules/gutter-grid/grid-mixin';
+@import '../../../node_modules/gutter-grid/grid-classes';
+
+// Utilities
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+@mixin outer-container($local-max-width: $max-width) {
+  @include clearfix;
+  max-width: $local-max-width;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+
+// visually-hidden
+//
+// Hide elements visually, but keep them available for screen readers. Don't use
+// this for elements that need to be focusable (e.g. a, button, input, select,
+// textarea). For those, please use `visually-hidden-focusable` instead.
+//
+// Usage: `@include visually-hidden;`
+
+@mixin visually-hidden {
+  & {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal;
+  }
+}
+
+// visually-hidden-focusable
+//
+// Hide elements visually, but keep them available, and focusable for screen
+// reader and keyboard users.
+//
+// Usage: `@include visually-hidden-focusable;`
+
+@mixin visually-hidden-focusable {
+  &:active,
+  &:focus {
+    clip: auto;
+    height: auto;
+    overflow: visible;
+    position: static !important;
+    width: auto;
+  }
+}
+
+// Typography
+
+@mixin source-sans-pro {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@mixin merriweather {
+  font-family: "Merriweather", sans-serif;
+}
+
+@mixin open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+// Heading mixins
+@mixin title {
+  font-size: $title-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h1 {
+  font-size: $h1-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin sfgov-h1 {
+  @include merriweather;
+  margin: 0;
+}
+
+@mixin h2 {
+  font-size: $h2-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h3 {
+  font-size: $h3-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h4 {
+  font-size: $h4-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h5 {
+  font-size: $h5-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h6 {
+  font-size: $h6-font-size;
+  font-weight: $font-normal;
+  line-height: $base-line-height;
+  text-transform: uppercase;
+}
+
+// Focus state mixin
+@mixin focus {
+  outline: $focus-outline;
+  outline-offset: $focus-spacing;
+}
+
+// Mobile-first media query helper
+@mixin media($bp) {
+  @media screen and (min-width: #{$bp}) {
+    @content;
+  }
+}
+
+// Screen reader only helper
+@mixin sr-only() {
+  position: absolute;
+  left: -999em;
+}
+
+// This "negates" the sr-only() helper; useful if
+// we want the default state of something to be
+// for screen readers only, but we want to force
+// it to show for sighted users under more specific
+// conditions.
+@mixin not-sr-only() {
+  position: static;
+}
+
+.usa-sr-only {
+  @include sr-only();
+}
+
+// Aria hidden helper
+@mixin accessibly-hidden() {
+  &[aria-hidden=true] {
+    display: none;
+  }
+}
+
+// Unstyled list helper
+@mixin unstyled-list() {
+  @include margin(0 null);
+  list-style-type: none;
+  padding-left: 0;
+
+  > li {
+    margin-bottom: 0;
+  }
+}
+
+// Font smoothing mixin
+// Only use for light text on dark background
+// TODO: Remove after adding PostCSS
+@mixin font-smoothing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+@mixin display-icon($icon, $direction, $size, $margin, $hover) {
+  &::#{$direction} {
+    background-image: url('#{$image-path}/#{$icon}.png');
+    background-image: url('#{$image-path}/#{$icon}.svg');
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    height: $size;
+    width: $size;
+
+    /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
+    @if $direction == 'after' {
+      margin-left: $margin;
+    } @else {
+      margin-right: $margin;
+    }
+    /* stylelint-enable */
+  }
+
+  @if $hover == 'hover' {
+    &:hover::#{$direction} {
+      background-image: url('#{$image-path}/#{$icon}-hover.png');
+      background-image: url('#{$image-path}/#{$icon}-hover.svg');
+    }
+  }
+}
+
+// Buttons
+
+@mixin disabledesque {
+  background-color: $color-gray-lighter;
+  pointer-events: none;
+  &:hover,
+  &.usa-button-hover,
+  &:active,
+  &.usa-button-active,
+  &:focus,
+  &.usa-focus {
+    background-color: $color-gray-lighter;
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+@mixin button-unstyled {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: $font-normal;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+// The default button:
+
+@mixin sfgov-button() {
+  @include font-smoothing;
+  @include source-sans-pro;
+  margin: 15px 0;
+  background-color: $color-primary;
+  border: 0;
+  border-radius: $button-border-radius;
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $base-font-size;
+  font-weight: $font-bold;
+  line-height: 1;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  @include media($mobile-screen) {
+    width: auto;
+  }
+  &:hover {
+    background-color: $color-primary-darker;
+    border-bottom: 0;
+    color: $color-white;
+    text-decoration: none;
+  }
+  &:active {
+    background-color: $color-primary-darkest;
+  }
+}
+
+@mixin sfgov-button-primary-alt() {
+  @include sfgov-button;
+  background-color: $color-primary-alt;
+  color: $color-base;
+  &:hover {
+    background-color: $color-primary-alt-dark;
+  }
+  &:active {
+    background-color: $color-primary-alt-darkest;
+    color: $color-white;
+  }
+}
+
+
+@mixin sfgov-button-secondary() {
+  @include sfgov-button;
+  background-color: $color-white;
+  box-shadow: $button-stroke $color-primary;
+  color: $color-primary;
+  &:hover {
+    box-shadow: $button-stroke $color-primary-darker;
+    color: #fff;
+  }
+  &:active {
+    box-shadow: $button-stroke $color-primary-darkest;
+    color: $color-primary-darkest;
+  }
+  &.is-active {
+    background-color: #0071bc !important;
+    color: #fff;
+  }
+}
+
+@mixin sfgov-button-secondary-inverse() {
+  background: transparent;
+  box-shadow: $button-stroke $color-white;
+  color: $color-white;
+  &:hover {
+    box-shadow: $button-stroke $color-gray-lighter;
+    color: $color-gray-lighter;
+  }
+  &:active {
+    box-shadow: $button-stroke $color-gray-light;
+    color: $color-gray-lighter;
+  }
+}
+
+@mixin sfgov-button-gray {
+  @include sfgov-button;
+  background-color: $color-gray;
+  &:hover {
+    background-color: $color-gray-dark;
+  }
+  &:active {
+    background-color: $color-base;
+  }
+}
+
+@mixin sfgov-button-red {
+  @include sfgov-button;
+  background-color: $color-secondary;
+  &:hover {
+    background-color: $color-secondary-dark;
+  }
+  &:active {
+    background-color: $color-secondary-darkest;
+  }
+}
+
+@mixin sfgov-button-big {
+  @include sfgov-button;
+  border-radius: 8px;
+  font-size: 2.4rem;
+  padding: 1.5rem 3rem;
+}
+
+// This mixin is only needed until we fully remove the
+// deprecated usa-button-disabled style.
+@mixin disabledesque {
+  background-color: $color-gray-lighter;
+  pointer-events: none;
+
+  &:hover,
+  &.usa-button-hover,
+  &:active,
+  &.usa-button-active,
+  &:focus,
+  &.usa-focus {
+    background-color: $color-gray-lighter;
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+// Layout
+
+@mixin media($bp) {
+  @media screen and (min-width: #{$bp}) {
+    @content;
+  }
+}
+
+@mixin media-max($bp) {
+  @media screen and (max-width: #{$bp}) {
+    @content;
+  }
+}
+
+// Basic grid settings.
+$susy: (
+  'columns': susy-repeat(12),
+  'gutters': 14px,
+  'spread': 'narrow',
+  'container-spread': 'narrow'
+);
+
+@mixin sfgov-container-full {
+  @include clearfix;
+  @include media($narrow-screen) {
+    width: 949px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@mixin sfgov-container-full--no-padding() {
+  @include clearfix;
+  @include media($narrow-screen) {
+    width: 949px;
+    margin: 0 auto;
+  }
+}
+
+@mixin sfgov-grid-two-columns--padding() {
+  @include clearfix;
+  @include media($narrow-screen) {
+    width: 949px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@mixin usa-sidenav-list {
+  @include unstyled-list();
+
+  > li {
+    background-color: transparent;
+    border-top: 1px solid $color-gray;
+    font-size: $h4-font-size;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  a {
+    border: none;
+    color: $color-base;
+    display: block;
+    font-family: $font-sans;
+    line-height: 1.3;
+    padding: 0.85rem 1rem 0.85rem $site-margins-mobile;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $color-gray-lightest;
+      color: $color-primary;
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline-offset: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    &.usa-current { /* stylelint-disable-line selector-no-qualifying-type */
+      border-left: $sidenav-current-border-width solid $color-primary;
+      color: $color-primary;
+      font-weight: $font-bold;
+      padding-left: $site-margins-mobile - $sidenav-current-border-width;
+    }
+  }
+}
+
+@mixin usa-sidenav-sublist {
+  @include unstyled-list();
+  margin: 0;
+  width: 100%;
+
+  li {
+    border: none;
+    font-size: $h5-font-size;
+  }
+
+  a {
+    padding-left: 2.8rem;
+    line-height: $heading-line-height;
+
+    &:hover,
+    &.usa-current { /* stylelint-disable-line selector-no-qualifying-type */
+      border: none;
+      padding-left: 2.8rem;
+    }
+  }
+
+  .usa-sidenav-sub_list {
+    a {
+      padding-left: 3.8rem;
+
+      &:focus {
+        outline-offset: 0;
+      }
+
+      &:hover {
+        padding-left: 3.8rem;
+      }
+    }
+  }
+}
+
+

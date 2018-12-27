@@ -1,4 +1,5 @@
-@import "../../01-atoms/01-colors/01-colors.scss";
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 .sidebar-block {
   border: 1px solid $color-gray-lighter;

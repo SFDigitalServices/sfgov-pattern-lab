@@ -1,5 +1,5 @@
-@import "../../00-protons/01-grid";
-@import "../../00-protons/00-breakpoints";
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 div.sfgov-timestamp {
   font-style: italic;

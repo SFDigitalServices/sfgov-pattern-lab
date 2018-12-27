@@ -1,4 +1,5 @@
-@import "../../01-atoms/02-typography/01-fonts.scss";
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 .sfgov-list-link {
   @include merriweather;

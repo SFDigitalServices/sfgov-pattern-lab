@@ -1,12 +1,7 @@
-@import "01-fonts.scss";
-@import "../../00-protons/01-grid";
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 // we can place the styles in straight in the folder where the component belongs.
-
-@mixin sfgov-h1 {
-  @include merriweather;
-  margin: 0;
-}
 
 h1,h2,h3,summary {
   color: $color-gray-dark;

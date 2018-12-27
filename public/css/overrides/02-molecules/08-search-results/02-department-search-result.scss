@@ -1,5 +1,5 @@
-@import "../../00-protons/01-grid";
-@import "../../01-atoms/01-colors/01-colors.scss";
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 .department-search-result {
   .department-search-result--container {

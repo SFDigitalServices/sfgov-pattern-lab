@@ -1,21 +1,5 @@
-@import "../../00-protons/01-grid";
-@import "../../01-atoms/01-colors/01-colors.scss";
-
-@mixin source-sans-pro {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-@mixin merriweather {
-  font-family: "Merriweather", sans-serif;
-}
-
-@mixin open-sans {
-  font-family: "Open Sans", sans-serif;
-}
-
-@mixin montserrat {
-  font-family: "Montserrat", sans-serif;
-}
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 .source-sans-pro {
   @include source-sans-pro;

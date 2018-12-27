@@ -1,6 +1,5 @@
-@import "../../01-atoms/01-colors/01-colors";
-@import "../../00-protons/02-mixins";
-@import "../../00-protons/01-grid";
+@import './public/css/core/variables';
+@import './public/css/core/mixins';
 
 .sfgov-pagination {
   @include clearfix;
