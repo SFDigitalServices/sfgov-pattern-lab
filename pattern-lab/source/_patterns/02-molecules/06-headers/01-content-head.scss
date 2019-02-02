@@ -60,6 +60,36 @@
     h3 {
       line-height: 3.4rem;
     }
+    .sfgov-header-tags {
+      display: table;
+      margin-top: 50px;
+      .sfgov-header-tags-label {
+        display: table-cell;
+        vertical-align: top;
+        white-space: nowrap;
+        padding-right: 20px;
+      }
+      .sfgov-header-tags-container {
+        display: table-cell;
+        vertical-align: top;
+        .sfgov-header-tags-tags {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          .sfgov-header-tags-tag {
+            display: inline-block;
+            margin: 0 10px 10px 0;
+            a {
+              display: block;
+              background: #fff;
+              border: 1px solid lightblue;
+              padding: 10px;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
   }
   .content-head--container.no-image {
     .content-head--content {

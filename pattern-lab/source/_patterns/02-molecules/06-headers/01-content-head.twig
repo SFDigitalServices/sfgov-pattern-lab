@@ -1,3 +1,5 @@
+
+
 <div class="content-head">
   <div class="content-head--container sfgov-container--full {{ (image) ? 'has-image' : 'no-image' }} ">
     {% if pattern_lab_demo %}
@@ -16,6 +18,24 @@
         <h3 class="lead-paragraph">
           {{ description }}
         </h3>
+      {% endif %}
+      {% if tagged_content %}
+        <div class="sfgov-header-tags">
+          {% if tagged_content %}
+            {% if tagged_content.label %}
+              <div class="sfgov-header-tags-label">{{ tagged_content.label }}</div>
+            {% endif %}
+            {% if tagged_content.tags %}
+              <div class="sfgov-header-tags-container">
+                <ul class="sfgov-header-tags-tags">
+                  {% for tag in tagged_content.tags %}
+                    <li class="sfgov-header-tags-tag"><a href="{{ tag.url }}">{{ tag.name }}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+          {% endif %}
+        </div>
       {% endif %}
     </div>
   </div>
