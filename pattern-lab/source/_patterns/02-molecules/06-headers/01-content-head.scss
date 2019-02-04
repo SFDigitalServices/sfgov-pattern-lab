@@ -82,9 +82,10 @@
             a {
               display: block;
               background: #fff;
-              border: 1px solid lightblue;
+              border: 1px solid $color-aqua-light;
               padding: 10px;
               text-decoration: none;
+              color: $color-cool-blue;
             }
           }
         }
