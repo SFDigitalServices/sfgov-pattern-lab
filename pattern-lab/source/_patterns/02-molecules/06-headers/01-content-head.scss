@@ -67,7 +67,7 @@
         display: table-cell;
         vertical-align: top;
         white-space: nowrap;
-        padding-right: 20px;
+        padding: 12px 20px 0 0;
       }
       .sfgov-header-tags-container {
         display: table-cell;
@@ -83,7 +83,7 @@
               display: block;
               background: #fff;
               border: 1px solid $color-aqua-light;
-              padding: 10px;
+              padding: 10px 15px;
               text-decoration: none;
               color: $color-cool-blue;
             }
