@@ -17,6 +17,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@mixin rubik {
+  font-family: "Rubik", sans-serif;
+}
+
 .source-sans-pro {
   @include source-sans-pro;
 }
@@ -33,11 +37,16 @@
   @include montserrat;
 }
 
+.rubik {
+  @include rubik;
+}
+
 .lead-paragraph {
-  @include merriweather;
+  @include rubik;
   font-size: 20px;
   line-height: 34px;
   color: $color-primary-darker;
+  font-weight: normal;
 }
 
 a:visited {

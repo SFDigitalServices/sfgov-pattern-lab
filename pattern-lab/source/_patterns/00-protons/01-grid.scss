@@ -54,7 +54,7 @@ $susy: (
 
 .sfgov-container--full {
   @include clearfix;
-  padding: 50px 0;
+  padding: 0 0 40px 0;
   @include media($narrow-screen) {
     width: 949px;
     margin: 0 auto;
@@ -240,3 +240,5 @@ $susy: (
 .preview {
   @include clearfix;
 }
+
+

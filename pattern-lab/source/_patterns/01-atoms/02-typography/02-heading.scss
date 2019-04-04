@@ -4,13 +4,14 @@
 // we can place the styles in straight in the folder where the component belongs.
 
 @mixin sfgov-h1 {
-  @include merriweather;
+  @include rubik;
   margin: 0;
+  font-weight: 300;
 }
 
 h1,h2,h3,summary {
   color: $color-gray-dark;
-  @include source-sans-pro;
+  @include rubik;
 }
 
 
@@ -25,7 +26,7 @@ h1 {
 }
 
 h2 {
-  @include merriweather;
+  @include rubik;
   font-weight: bold;
   font-size: 2.4rem;
 }

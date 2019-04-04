@@ -1,52 +1,52 @@
-@import "../../00-protons/01-grid";
+// @import "../../00-protons/01-grid";
 
-.sfgov-search-form {
-  display: flex;
-  flex-direction: row;
-  .js-form-type-textfield {
-    width: susy-span(8 wide of 12 wide);
-    @include media($medium-screen) {
-      width: susy-span(7 wide of 12 wide);
-    }
-  }
-  .form-actions {
-    width: susy-span(4 wide of 12 wide);
-    @include media($medium-screen) {
-      width: susy-span(3 wide of 12 wide);
-    }
-  }
-  input[type=text] {
-    border: 2px solid #0071bc;
-    border-right: 0;
-    margin: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    max-width: inherit;
-  }
-  [type=submit] {
-    margin: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    @include media($medium-screen) {
-      width: 80%;
-    }
-  }
-}
+// .sfgov-search-form {
+//   display: flex;
+//   flex-direction: row;
+//   .js-form-type-textfield {
+//     width: susy-span(8 wide of 12 wide);
+//     @include media($medium-screen) {
+//       width: susy-span(7 wide of 12 wide);
+//     }
+//   }
+//   .form-actions {
+//     width: susy-span(4 wide of 12 wide);
+//     @include media($medium-screen) {
+//       width: susy-span(3 wide of 12 wide);
+//     }
+//   }
+//   input[type=text] {
+//     border: 2px solid #0071bc;
+//     border-right: 0;
+//     margin: 0;
+//     border-top-left-radius: 5px;
+//     border-bottom-left-radius: 5px;
+//     max-width: inherit;
+//   }
+//   [type=submit] {
+//     margin: 0;
+//     border-bottom-left-radius: 0;
+//     border-top-left-radius: 0;
+//     @include media($medium-screen) {
+//       width: 80%;
+//     }
+//   }
+// }
 
-// Responsive search form.
+// // Responsive search form.
 
-.sfgov-responsive--search-form {
-  form.sfgov-search-form {
-    .form-item-keywork {
-      input[type="text"] {
+// .sfgov-responsive--search-form {
+//   form.sfgov-search-form {
+//     .form-item-keywork {
+//       input[type="text"] {
 
-      }
-    }
-    .form-actions {
-      position: relative;
-      input[type="submit"] {
-        font-size: 0;
-      }
-    }
-  }
-}
+//       }
+//     }
+//     .form-actions {
+//       position: relative;
+//       input[type="submit"] {
+//         font-size: 0;
+//       }
+//     }
+//   }
+// }

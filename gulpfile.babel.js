@@ -67,7 +67,9 @@ gulp.task('pl:css', () => {
                 this.emit('end');
             }
         }))
-        .pipe(sourcemaps.init())
+        .pipe(sourcemaps.init({
+            loadMaps: true
+        }))
         .pipe(sass({
             outputStyle: 'compressed',
             errLogToConsole: true,

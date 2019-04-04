@@ -1,0 +1,47 @@
+@import "../../01-atoms/02-typography/01-fonts";
+
+.sfgov-spotlight {
+  background: #8266bc;
+  display: table;
+  width: 100%;
+  .sfgov-spotlight-section {
+    display: table-cell;
+    width: 49%;
+    vertical-align: top;
+    .sfgov-spotlight-button {
+      color: #4F66EE;
+      display: inline-block;;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: #fff;
+      text-decoration: none;
+    }
+    &.sfgov-spotlight-text {
+      background: #8266bc;
+      color: #fff;
+      padding: 40px;
+      h4 {
+        @include rubik;
+        font-size: 3.2rem;
+        font-weight: 500;
+        padding: 0;
+        margin: 0 0 20px 0;
+      }
+      p {
+        font-size: 1.7rem;
+        padding: 0;
+        margin: 0 0 20px 0;
+      }
+
+    }
+    &.sfgov-spotlight-image {
+      background-color: #cccced;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      img {
+        display: none;
+      }
+    }
+  }
+}

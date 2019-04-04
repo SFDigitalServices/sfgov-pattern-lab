@@ -1,0 +1,18 @@
+<div class="sfgov-spotlight">
+  <div class="sfgov-spotlight-text sfgov-spotlight-section">
+    <h4>
+      {{ title }}
+    </h4>
+    <p>
+      {{ description }}
+    </p>
+    {% if button_text and button_uri %}
+      <a class="sfgov-spotlight-button" href="{{ button_uri }}">{{ button_text }}</a>
+    {% endif %}
+  </div>
+  {% if image_url %}
+    <div class="sfgov-spotlight-image sfgov-spotlight-section" style="background-image: url({{ image_url }})">
+      <img alt="{{ image_alt }}"/>
+    </div>
+  {% endif %}
+</div>

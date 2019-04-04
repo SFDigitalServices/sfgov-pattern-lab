@@ -1,16 +1,21 @@
 @import "../../00-protons/01-grid";
 
-.sfgov-nav-container {
-  @include clearfix;
-  padding: 0;
-  @include media($narrow-screen) {
-    width: 949px;
-    margin: 0 auto;
-  }
-  .sfgov-nav-container__content {
-    display: flex;
-    @include media-max($narrow-screen) {
-      max-height: 60px;
-    }
-  }
-}
+
+// $mobile-screen: 700px;
+// $medium-screen: 768px;
+// $wide-screen: 1280px;
+
+// .sfgov-nav-container {
+//   // @include clearfix;
+//   padding: 0;
+//   @include media($narrow-screen) {
+//     width: 949px;
+//     margin: 0 auto;
+//   }
+//   .sfgov-nav-container__content {
+//     display: flex;
+//     @include media-max($narrow-screen) {
+//       max-height: 60px;
+//     }
+//   }
+// }

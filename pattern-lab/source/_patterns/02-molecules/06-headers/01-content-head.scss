@@ -1,75 +1,77 @@
-@import "../../01-atoms/01-colors/01-colors.scss";
-@import "../../00-protons/02-mixins";
-@import "../../00-protons/01-grid";
-@import "../../00-protons/00-breakpoints";
+// @import "../../01-atoms/01-colors/01-colors.scss";
+// @import "../../00-protons/02-mixins";
+// @import "../../00-protons/01-grid";
+// @import "../../00-protons/00-breakpoints";
 
-.content-head {
-  background-color: $color-primary-alt-lightest;
-  padding: 0 2.5rem;
-  @include media($medium-screen + 1) {
-    padding: 4rem 0;
-  }
-  @include media-max($narrow-screen) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .content-head--image {
-    height: 100%;
-    padding: 3rem 0 1.5rem 0;
-    text-align: center;
-    border-bottom: 1px solid $color-gray-lighter;
-    @include media($medium-screen + 1) {
-      text-align: left;
-      @include clearfix;
-      width: susy-span(3 narrow of 12);
-      float: left;
-      padding: 0 susy-gutter();
-      border-bottom: 0;
-    }
-    img {
-      width: 104px;
-      height: auto;
-      @include media($medium-screen + 1) {
-        width: 142px;
-      }
-      @include media($narrow-screen) {
-        width: 100%;
-      }
-    }
-  }
-  .content-head--content {
-    padding-top: 3.5rem;
-    padding-bottom: 4.2rem;
-    @include media($medium-screen + 1) {
-      @include clearfix;
-      width: susy-span(9 narrow of 12);
-      float: right;
-      padding: 0 susy-gutter();
-      border-left: 1px solid $color-gray-lighter;
-    }
-    h1 {
-      color: $color-primary-darker;
-      font-size: 3rem;
-      @include media($medium-screen + 1) {
-        font-size: 4rem;
-      }
-    }
-    .description {
-      color: $color-primary-darker;
-    }
-    h3 {
-      line-height: 3.4rem;
-    }
-  }
-  .content-head--container.no-image {
-    .content-head--content {
-      width: 100%;
-      border-left: 0;
-      padding-top: 3.5rem;
-      padding-bottom: 4.2rem;
-      @include media($medium-screen + 1) {
-        padding: 0;
-      }
-    }
-  }
-}
+// .content-head {
+//   background-color: $color-primary-alt-lightest;
+//   padding: 0 2.5rem;
+//   @include media($medium-screen + 1) {
+//     padding: 40px 0 0 0;
+//   }
+//   @include media-max($narrow-screen) {
+//     padding-left: 20px;
+//     padding-right: 20px;
+//   }
+//   .content-head--image {
+//     height: 100%;
+//     padding: 3rem 0 1.5rem 0;
+//     text-align: center;
+//     border-bottom: 1px solid $color-gray-lighter;
+//     @include media($medium-screen + 1) {
+//       text-align: left;
+//       @include clearfix;
+//       width: susy-span(3 narrow of 12);
+//       float: left;
+//       padding: 0 susy-gutter();
+//       border-bottom: 0;
+//     }
+//     img {
+//       width: 104px;
+//       height: auto;
+//       @include media($medium-screen + 1) {
+//         width: 142px;
+//       }
+//       @include media($narrow-screen) {
+//         width: 100%;
+//       }
+//     }
+//   }
+//   .content-head--content {
+//     padding-top: 3.5rem;
+//     padding-bottom: 4.2rem;
+//     @include media($medium-screen + 1) {
+//       @include clearfix;
+//       width: susy-span(9 narrow of 12);
+//       float: right;
+//       padding: 0 susy-gutter();
+//       border-left: 1px solid $color-gray-lighter;
+//     }
+//     h1 {
+//       color: $color-primary-darker;
+//       font-size: 3rem;
+//       margin-bottom: 40px;
+//       @include media($medium-screen + 1) {
+//         font-size: 4rem;
+//       }
+//     }
+//     .description {
+//       color: $color-primary-darker;
+//     }
+//     h3 {
+//       line-height: 3.4rem;
+//       margin: 0;
+//     }
+//   }
+//   .content-head--container.no-image {
+//     .content-head--content {
+//       width: 100%;
+//       border-left: 0;
+//       padding-top: 3.5rem;
+//       padding-bottom: 4.2rem;
+//       @include media($medium-screen + 1) {
+//         padding: 0;
+//       }
+//     }
+//   }
+// }

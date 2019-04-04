@@ -1,0 +1,27 @@
+@import "../../01-atoms/01-colors/01-colors";
+@import "../../01-atoms/02-typography/01-fonts";
+
+.sfgov-featured-item {
+  @include rubik;
+  background: #8266bc;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  display: table-cell;
+  padding: 20px;
+  max-width: 0;
+  h5 {
+    @include rubik;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+  &:visited {
+    color: #fff;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
