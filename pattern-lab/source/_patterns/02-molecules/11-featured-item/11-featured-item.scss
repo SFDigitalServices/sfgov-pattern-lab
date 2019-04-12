@@ -7,9 +7,9 @@
   text-decoration: none;
   color: #fff;
   border-radius: 8px;
-  display: table-cell;
+  // display: table-cell;
+  display: block;
   padding: 20px;
-  max-width: 0;
   h5 {
     @include rubik;
     font-weight: 600;
