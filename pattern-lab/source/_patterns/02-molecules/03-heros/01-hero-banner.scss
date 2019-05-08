@@ -16,7 +16,6 @@
   h1 {
     // todo: add this color to the styleguide.
     color: $color-blue-darker;
-    @include merriweather;
   }
   &.no-banner-text {
     h1 {

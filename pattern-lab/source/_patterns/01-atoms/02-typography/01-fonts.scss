@@ -5,10 +5,6 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
-@mixin merriweather {
-  font-family: "Merriweather", sans-serif;
-}
-
 @mixin open-sans {
   font-family: "Open Sans", sans-serif;
 }
@@ -23,10 +19,6 @@
 
 .source-sans-pro {
   @include source-sans-pro;
-}
-
-.merriweather {
-  @include merriweather;
 }
 
 .open-sans {
