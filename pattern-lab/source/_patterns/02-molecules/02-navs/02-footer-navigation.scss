@@ -21,14 +21,9 @@
     margin: 0;
     li {
       @include media-max($medium-screen - 1) {
-        border-top: 1px solid $color-gray-dark;
         border-bottom: 0;
-        &:last-child {
-          border-bottom: 1px solid $color-gray-dark;
-        }
       }
       @include media($medium-screen) {
-        display: inline-block;
         &:first-child {
           padding-left: 0;
         }
@@ -38,16 +33,7 @@
           padding-left: 17px;
         }
       }
-      padding: 15px 40px 15px 15px;
       margin-bottom: 0;
-      a {
-        @include source-sans-pro;
-        font-size: 17px;
-        color: $color-white;
-        line-height: 22px;
-        font-weight: bold;
-        text-decoration: none;
-      }
     }
   }
 }
