@@ -35,18 +35,3 @@ h3 {
   font-size: 2rem;
   font-weight: 600;
 }
-
-.sfgov-header-section {
-  color: #FFFFFF;
-  background: #205493;
-  padding: 21px 25px;
-  &.no-margin {
-    margin: 0;
-  }
-  &.big-padding {
-    @include media($narrow-screen) {
-      padding: 16px 0 15px 31px;
-    }
-  }
-}
-

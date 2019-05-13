@@ -341,7 +341,6 @@ button,
 .sfgov-cta-button__container {
   a {
     @include font-smoothing;
-    @include source-sans-pro;
     margin: 0.5em 0.5em 0.5em 0;
     appearance: none;
     background-color: $color-green;
