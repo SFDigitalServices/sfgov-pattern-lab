@@ -25,18 +25,9 @@
       display: inline-block;
       width: auto;
       text-align: left;
-      .person-name {
-        font-size: 2rem;
-        font-weight: bold;
-        a {
-          text-decoration: none;
-          color: $color-blue;
           > * {
             display: inline-block;
-            text-decoration: none;
           }
-        }
-      }
     }
     @include media-max($medium-screen) {
       margin-bottom: 20px; 

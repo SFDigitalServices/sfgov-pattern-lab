@@ -26,11 +26,8 @@
     text-align: left;
     .person-name {
       a {
-        text-decoration: underline;
-        color: $color-blue;
         > * {
           display: inline-block;
-          text-decoration: underline;
         }
       }
     }
