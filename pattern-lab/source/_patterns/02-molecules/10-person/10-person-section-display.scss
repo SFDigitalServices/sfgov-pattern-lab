@@ -2,7 +2,6 @@
 @import "../../00-protons/01-grid";
 
 .person-container {
-  margin-bottom: 35px;
   .person-photo {
     background-size: cover;
     background-position: top center;
@@ -21,16 +20,8 @@
     }
   }
   .person-bio {
-    display: inline-block;
     width: 160px;
     text-align: left;
-    .person-name {
-      a {
-        > * {
-          display: inline-block;
-        }
-      }
-    }
   }
   @include media-max($medium-screen) {    
     .person-photo {

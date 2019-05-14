@@ -25,9 +25,6 @@
       display: inline-block;
       width: auto;
       text-align: left;
-          > * {
-            display: inline-block;
-          }
     }
     @include media-max($medium-screen) {
       margin-bottom: 20px; 
