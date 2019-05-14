@@ -34,14 +34,6 @@
         }
       }
     }
-    .person-title {
-      color: $color-gray;
-      font-weight: 600;
-    }
-    .person-subtitle {
-      color: $color-gray;
-      font-weight: normal;
-    }
   }
   @include media-max($medium-screen) {    
     .person-photo {
