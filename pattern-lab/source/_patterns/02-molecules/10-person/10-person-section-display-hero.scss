@@ -9,11 +9,9 @@
       background-position: top center;
       background-color: #333;
       display: inline-block;
-      vertical-align: middle;
       margin-right: 40px;
       width: 150px;
       height: 150px;
-      overflow: hidden;
       img {
         max-width: 1px;
         max-height: 1px;
@@ -23,7 +21,6 @@
     }
     .person-bio {
       display: inline-block;
-      width: auto;
       text-align: left;
     }
     @include media-max($medium-screen) {
