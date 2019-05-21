@@ -1,13 +1,11 @@
 @import "../../01-atoms/01-colors/01-colors";
 
 .sidebar-card {
-  background-color: $color-gray-lightest;
   padding: 20px 0px 20px;
   .sidebar-card__title {
     margin-top: 0;
   }
   .sidebar-card__body {
-    color: $color-gray;
     line-height: 26px;
   }
 }
