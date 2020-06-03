@@ -53,7 +53,7 @@ let errorHandler = (error) => {
 
 // Pattern Lab CSS.
 // -------------------------------------------------------------- //
-gulp.task('pl:css', () => {
+gulp.task('pl:css', gulp.series(() => {
     return gulp.src(config.css.src)
         .pipe(glob())
         .pipe(plumber({
@@ -81,42 +81,30 @@ gulp.task('pl:css', () => {
         .pipe(gulp.dest(config.css.pattern_lab_destination))
         .pipe(gulp.dest(config.css.dist_folder))
         .pipe(browserSync.reload({stream: true, match: '**/*.css'}));
-});
+}));
 
-gulp.task('pl:imagemin', () => {
+gulp.task('pl:imagemin', gulp.series(() => {
     return gulp.src(config.images.src)
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images'))
-});
+}));
 
 // Watch task.
 // ------------------------------------------------------------------- //
 
-gulp.task('watch', function () {
+gulp.task('watch', gulp.series(function () {
     gulp.watch(config.js.src, ['legacy:js']);
     gulp.watch(config.css.src, ['pl:css']);
     gulp.watch(config.css.src, ['pl:js']);
     gulp.watch(config.pattern_lab.src, ['generate:pl']);
     gulp.watch(config.pattern_lab.javascript.src, ['generate:pl']);
     gulp.watch(config.images.src, ['pl:imagemin']);
-});
-
-// Static Server + Watch.
-// ------------------------------------------------------------------- //
-
-gulp.task('serve', ['watch', 'generate:pl'], () => {
-    browserSync.init({
-        serveStatic: ['./pattern-lab/public']
-    });
-});
-
-// generate Pattern library.
-gulp.task('generate:pl', ['pl:php', 'legacy:js', 'pl:css', 'pl:js', 'pl:imagemin']);
+}));
 
 // Generate pl with PHP.
 // -------------------------------------------------------------------- //
 
-gulp.task('pl:php', shell.task('php pattern-lab/core/console --generate'));
+gulp.task('pl:php', gulp.series(shell.task('php pattern-lab/core/console --generate')));
 
 // Component JS.
 // -------------------------------------------------------------------- //
@@ -124,8 +112,8 @@ gulp.task('pl:php', shell.task('php pattern-lab/core/console --generate'));
 // _patterns folder, if new patterns need to be added the config.json array
 // needs to be edited to watch for more folders.
 
-gulp.task('pl:js', () => {
-    return gulp.src(config.pattern_lab.javascript.src)
+gulp.task('pl:js', gulp.series(() => {
+    return gulp.src(config.pattern_lab.javascript.src, { allowEmpty: true })
         .pipe(sourcemaps.init())
         .pipe(babel({
             presets: ['es2015']
@@ -135,9 +123,21 @@ gulp.task('pl:js', () => {
         .pipe(gulp.dest('./pattern-lab/public/js'))
         .pipe(gulp.dest('./dist/pl/js'))
         .pipe(browserSync.reload({stream: true, match: '**/*.js'}));
-});
+}));
+
+// generate Pattern library.
+gulp.task('generate:pl', gulp.series('pl:php', 'legacy:js', 'pl:css', 'pl:js', 'pl:imagemin'));
+
+// Static Server + Watch.
+// ------------------------------------------------------------------- //
+
+gulp.task('serve', gulp.series('watch', 'generate:pl', () => {
+    browserSync.init({
+        serveStatic: ['./pattern-lab/public']
+    });
+}));
 
 // Default Task
 // --------------------------------------------------------------------- //
 
-gulp.task('default', ['serve']);
+gulp.task('default', gulp.series('serve'));
